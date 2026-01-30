@@ -37,13 +37,24 @@ export default createHandler(() => (
           <meta name="format-detection" content="telephone=no" />
           
           {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-G44R3QY849"></script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZXLSE4S22"></script>
           <script>
             {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-G44R3QY849');
+              // Ignore local traffic
+              const hostname = window.location.hostname;
+              const isLocalhost = hostname === 'localhost' || 
+                                  hostname === '127.0.0.1' || 
+                                  hostname === '0.0.0.0' ||
+                                  hostname.startsWith('192.168.') ||
+                                  hostname.startsWith('10.') ||
+                                  hostname.endsWith('.local');
+              
+              if (!isLocalhost) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-VZXLSE4S22');
+              }
             `}
           </script>
           
