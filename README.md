@@ -18,7 +18,7 @@ Independent record label website - dark minimalist design showcasing artists, re
 
 - **Legal/Formal contexts**: When legally required (contracts, legal documents), use proper capitalization
 - **Structured Data**: Schema.org structured data may use proper capitalization for technical compliance
-- **Domain/URLs**: URLs and technical identifiers remain as-is (friendmusic.com)
+- **Domain/URLs**: URLs and technical identifiers remain as-is (friendmusicrecords.com)
 
 ### Typography
 

@@ -14,7 +14,7 @@ export default function Artists() {
       <StandardMetadata
         title="artists | friend music records"
         description="Meet the innovative artists on the friend music records roster. Independent musicians creating meaningful work across multiple genres."
-        url="https://www.friendmusic.com/artists"
+        url="https://www.friendmusicrecords.com/artists"
         type="website"
         keywords="friend music records artists, indie artists, record label roster, independent musicians, music label artists, artist roster"
       />

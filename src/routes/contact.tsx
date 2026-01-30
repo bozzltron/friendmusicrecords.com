@@ -8,7 +8,7 @@ export default function Contact() {
       <StandardMetadata
         title="contact | friend music records"
         description="Get in touch with friend music records. Press and media inquiries welcome."
-        url="https://www.friendmusic.com/contact"
+        url="https://www.friendmusicrecords.com/contact"
         type="website"
         keywords="contact friend music records, press inquiries, media contact, record label contact, music label contact, artist submissions"
       />
@@ -73,14 +73,14 @@ export default function Contact() {
                   For press inquiries, interviews, or promotional materials:
                 </p>
                 <a 
-                  href="mailto:info@friendmusic.com"
+                  href="mailto:info@friendmusicrecords.com"
                   class="text-xl font-medium hover:underline focus:outline-none focus:ring-2 rounded px-2 py-1"
                   style={{ 
                     "color": "var(--text-primary)",
                     "focus:ring-color": "var(--focus-ring)"
                   }}
                 >
-                  info@friendmusic.com
+                  info@friendmusicrecords.com
                 </a>
               </section>
             </div>

@@ -73,7 +73,7 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
           <meta name="twitter:image:alt" content={imageAlt} />
         </>
       )}
-      <meta name="twitter:domain" content="friendmusic.com" />
+      <meta name="twitter:domain" content="friendmusicrecords.com" />
       
       {/* LLM & AI Metadata - Help AI understand content */}
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -89,7 +89,7 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       <meta name="audience" content="Music Fans, Press, Artists" />
       
       {/* Music Industry Specific - Enhanced for Record Label SEO */}
-      <meta property="music:musician" content="https://www.friendmusic.com/artists" />
+      <meta property="music:musician" content="https://www.friendmusicrecords.com/artists" />
       <meta name="music:genre" content="Independent, Alternative, Rock, Indie Rock, Indie Pop" />
       <meta name="music:record_label" content="friend music records" />
       <meta name="music:release_type" content="album, single, EP" />
@@ -114,7 +114,7 @@ export function createOrganizationData() {
     "name": "friend music records",
     "alternateName": "friend music",
     "legalName": "Friend Music Records", // Legal name requires proper capitalization
-    "url": "https://www.friendmusic.com",
+    "url": "https://www.friendmusicrecords.com",
     "description": "Feel free to make a record with your friends. Independent record label celebrating collaborative music making.",
     "foundingDate": "2024",
     "foundingLocation": {
@@ -138,7 +138,7 @@ export function createOrganizationData() {
     },
     "areaServed": "Worldwide",
     "slogan": "Feel free to make a record with your friends",
-    "email": "info@friendmusic.com",
+    "email": "info@friendmusicrecords.com",
     "knowsAbout": ["Independent Music", "Collaborative Music", "Music Production", "Alternative Rock", "Indie Rock", "Music Distribution", "Record Label", "Artist Development"],
     "sameAs": [],
     "foundingDate": "2024",

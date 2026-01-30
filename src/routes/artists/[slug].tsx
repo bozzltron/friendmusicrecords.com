@@ -47,7 +47,7 @@ export default function ArtistEPK() {
       <StandardMetadata
         title={`${artist.name} - Electronic Press Kit | friend music records`}
         description={artist.bio.short}
-        url={`https://www.friendmusic.com/artists/${artist.slug}/`}
+        url={`https://www.friendmusicrecords.com/artists/${artist.slug}/`}
         type="music.musician"
         keywords={`${artist.name}, press kit, EPK, electronic press kit, ${artist.genre.join(', ')}, ${artist.location.city}, friend music records, record label artist, indie artist`}
         author={artist.name}

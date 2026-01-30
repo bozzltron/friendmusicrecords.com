@@ -36,7 +36,7 @@ mozworth is currently booking dates in the Austin area to support the release an
 For media inquiries, interviews, or press materials, please contact:
 
 Friend Music Records PR
-email: info@friendmusic.com
+email: info@friendmusicrecords.com
 phone: +1 (515) 418‑7894
 
 **About mozworth**

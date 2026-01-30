@@ -3,7 +3,7 @@ import { artists } from "../data/artists";
 import { pressReleases } from "../data/pressReleases";
 
 export async function GET({ request }: APIEvent) {
-  const baseUrl = "https://www.friendmusic.com";
+  const baseUrl = "https://www.friendmusicrecords.com";
   const currentDate = new Date().toISOString();
 
   // Static pages
@@ -11,7 +11,7 @@ export async function GET({ request }: APIEvent) {
     { url: "/", priority: "1.0", changefreq: "weekly" },
     { url: "/artists", priority: "0.9", changefreq: "weekly" },
     { url: "/press", priority: "0.8", changefreq: "weekly" },
-    { url: "/ethos", priority: "0.7", changefreq: "monthly" },
+    { url: "/about", priority: "0.7", changefreq: "monthly" },
     { url: "/contact", priority: "0.6", changefreq: "monthly" },
   ];
 

@@ -13,7 +13,7 @@ export default function Press() {
       <StandardMetadata
         title="press | friend music records"
         description="Latest news and press releases from friend music records. Stay updated on artist signings, new releases, and label announcements."
-        url="https://www.friendmusic.com/press"
+        url="https://www.friendmusicrecords.com/press"
         type="website"
         keywords="friend music records press, press releases, music news, artist announcements, record label news, indie music news, music label press"
       />
