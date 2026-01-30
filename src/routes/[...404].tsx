@@ -9,7 +9,7 @@ export default function NotFound() {
       <StandardMetadata
         title="page not found | friend music records"
         description="The page you're looking for doesn't exist."
-        url="https://www.friendmusicrecords.com/404"
+        url="https://friendmusicrecords.com/404"
         type="website"
       />
       

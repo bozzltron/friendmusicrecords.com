@@ -93,7 +93,7 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       <meta name="audience" content="Music Fans, Press, Artists" />
       
       {/* Music Industry Specific - Enhanced for Record Label SEO */}
-      <meta property="music:musician" content="https://www.friendmusicrecords.com/artists" />
+      <meta property="music:musician" content="https://friendmusicrecords.com/artists" />
       <meta name="music:genre" content="Independent, Alternative, Rock, Indie Rock, Indie Pop" />
       <meta name="music:record_label" content="friend music records" />
       <meta name="music:release_type" content="album, single, EP" />
@@ -118,7 +118,7 @@ export function createOrganizationData() {
     "name": "friend music records",
     "alternateName": "friend music",
     "legalName": "Friend Music Records", // Legal name requires proper capitalization
-    "url": "https://www.friendmusicrecords.com",
+    "url": "https://friendmusicrecords.com",
     "description": "Feel free to make a record with your friends. Independent record label celebrating collaborative music making.",
     "foundingDate": "2024",
     "foundingLocation": {
@@ -196,12 +196,12 @@ export function createArtistData(props: {
     "recordLabel": {
       "@type": "RecordLabel",
       "name": "friend music records",
-      "url": "https://www.friendmusicrecords.com"
+      "url": "https://friendmusicrecords.com"
     },
     "memberOf": {
       "@type": "RecordLabel",
       "name": "friend music records",
-      "url": "https://www.friendmusicrecords.com"
+      "url": "https://friendmusicrecords.com"
     },
     ...(props.location && {
       "location": {
@@ -238,12 +238,12 @@ export function createPressReleaseData(props: {
     "author": {
       "@type": "RecordLabel",
       "name": "friend music records",
-      "url": "https://www.friendmusicrecords.com"
+      "url": "https://friendmusicrecords.com"
     },
     "publisher": {
       "@type": "RecordLabel",
       "name": "friend music records",
-      "url": "https://www.friendmusicrecords.com"
+      "url": "https://friendmusicrecords.com"
     },
     ...(props.image && { "image": props.image }),
     "url": props.url,

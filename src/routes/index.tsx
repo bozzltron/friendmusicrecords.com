@@ -9,10 +9,10 @@ export default function Home() {
       <StandardMetadata
         title="friend music records | independent record label"
         description="Feel free to make a record with your friends. Independent record label celebrating collaborative music making. Friends helping friends publish their music."
-        url="https://www.friendmusicrecords.com"
+        url="https://friendmusicrecords.com"
         type="website"
         keywords="independent record label, friend music records, collaborative music, jeff tweedy, feel free, indie rock, alternative rock, music label, record label, music distribution, independent music, diy music, austin music"
-        image="https://www.friendmusicrecords.com/friendmusicrecords.webp"
+        image="https://friendmusicrecords.com/friendmusicrecords.webp"
         imageAlt="friend music records logo"
         structuredData={createOrganizationData()}
       />

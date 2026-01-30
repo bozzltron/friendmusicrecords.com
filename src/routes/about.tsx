@@ -8,7 +8,7 @@ export default function About() {
       <StandardMetadata
         title="about | friend music records"
         description="Learn about friend music records. Friends helping friends publish their music. A collaborative approach to making and sharing music together."
-        url="https://www.friendmusicrecords.com/about"
+        url="https://friendmusicrecords.com/about"
         type="website"
         keywords="about friend music records, collaborative music, independent music, music community, music collaboration, record label, austin music"
       />

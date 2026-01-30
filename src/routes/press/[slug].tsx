@@ -45,7 +45,7 @@ export default function PressReleasePage() {
       <StandardMetadata
         title={`${pressRelease.title} | friend music records`}
         description={pressRelease.excerpt}
-        url={`https://www.friendmusicrecords.com/press/${pressRelease.slug}/`}
+        url={`https://friendmusicrecords.com/press/${pressRelease.slug}/`}
         type="article"
         keywords={`${pressRelease.tags.join(', ')}, press release, friend music records, austin music, indie music news, record label press`}
         author="friend music records"
@@ -57,7 +57,7 @@ export default function PressReleasePage() {
           description: pressRelease.excerpt,
           datePublished: pressRelease.date,
           image: artist()?.image.hero,
-          url: `https://www.friendmusicrecords.com/press/${pressRelease.slug}/`
+          url: `https://friendmusicrecords.com/press/${pressRelease.slug}/`
         })}
       />
 

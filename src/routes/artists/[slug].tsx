@@ -47,7 +47,7 @@ export default function ArtistEPK() {
       <StandardMetadata
         title={`${artist.name} - Electronic Press Kit | friend music records`}
         description={artist.bio.short}
-        url={`https://www.friendmusicrecords.com/artists/${artist.slug}/`}
+        url={`https://friendmusicrecords.com/artists/${artist.slug}/`}
         type="music.musician"
         keywords={`${artist.name}, press kit, EPK, electronic press kit, ${artist.genre.join(', ')}, ${artist.location.city}, friend music records, record label artist, indie artist`}
         author={artist.name}
@@ -55,7 +55,7 @@ export default function ArtistEPK() {
         imageAlt={`${artist.name} official press photo`}
         structuredData={createArtistData({
           name: artist.name,
-          url: `https://www.friendmusicrecords.com/artists/${artist.slug}/`,
+          url: `https://friendmusicrecords.com/artists/${artist.slug}/`,
           image: artist.image.hero,
           description: artist.bio.full,
           genre: artist.genre,
@@ -639,7 +639,7 @@ export default function ArtistEPK() {
                     <p style={{ color: "var(--text-secondary)" }}>Austin, TX</p>
                     <a href="mailto:info@friendmusicrecords.com" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>info@friendmusicrecords.com</a>
                     <p class="mt-2">
-                      <a href="https://www.friendmusicrecords.com" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>www.friendmusicrecords.com</a>
+                      <a href="https://friendmusicrecords.com" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>friendmusicrecords.com</a>
                     </p>
                   </div>
                   <a 

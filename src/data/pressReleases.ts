@@ -83,7 +83,7 @@ For media inquiries, interviews, or press materials, please contact:
 
 Friend Music Records
 info@friendmusicrecords.com
-www.friendmusicrecords.com
+friendmusicrecords.com
 
 **About mozworth**
 mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
@@ -123,7 +123,7 @@ For media inquiries, interviews, or press materials, please contact:
 
 Friend Music Records
 info@friendmusicrecords.com
-www.friendmusicrecords.com
+friendmusicrecords.com
 
 **About mozworth**
 mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.

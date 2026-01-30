@@ -8,7 +8,7 @@ export default function Contact() {
       <StandardMetadata
         title="contact | friend music records"
         description="Get in touch with friend music records. Press and media inquiries welcome."
-        url="https://www.friendmusicrecords.com/contact"
+        url="https://friendmusicrecords.com/contact"
         type="website"
         keywords="contact friend music records, press inquiries, media contact, record label contact, music label contact, artist submissions"
       />
