@@ -57,7 +57,7 @@ export default function PressReleasePage() {
           description: pressRelease.excerpt,
           datePublished: pressRelease.date,
           image: artist()?.image.hero,
-          url: `https://www.friendmusic.com/press/${pressRelease.slug}/`
+          url: `https://www.friendmusicrecords.com/press/${pressRelease.slug}/`
         })}
       />
 

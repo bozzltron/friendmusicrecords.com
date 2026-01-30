@@ -82,8 +82,8 @@ With Ken's move, drummer Mike Hall steps in for the Sandpiper single release. In
 For media inquiries, interviews, or press materials, please contact:
 
 Friend Music Records
-info@friendmusic.com
-www.friendmusic.com
+info@friendmusicrecords.com
+www.friendmusicrecords.com
 
 **About mozworth**
 mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
@@ -122,8 +122,8 @@ At its heart, "The Sky Is Falling" is more than a commentary on the state of the
 For media inquiries, interviews, or press materials, please contact:
 
 Friend Music Records
-info@friendmusic.com
-www.friendmusic.com
+info@friendmusicrecords.com
+www.friendmusicrecords.com
 
 **About mozworth**
 mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.

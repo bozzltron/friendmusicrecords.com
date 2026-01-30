@@ -55,7 +55,7 @@ export default function ArtistEPK() {
         imageAlt={`${artist.name} official press photo`}
         structuredData={createArtistData({
           name: artist.name,
-          url: `https://www.friendmusic.com/artists/${artist.slug}/`,
+          url: `https://www.friendmusicrecords.com/artists/${artist.slug}/`,
           image: artist.image.hero,
           description: artist.bio.full,
           genre: artist.genre,
@@ -488,7 +488,7 @@ export default function ArtistEPK() {
                     <p class="mb-4">mozworth is currently booking dates in the Austin area to support the release and the band is in the process of recording their next full length album expected late 2026.</p>
                     <p class="mb-6 font-semibold">Story of an Artist releases January 22, 2026</p>
                     <p class="mb-4">For media inquiries, interviews, or press materials, please contact:</p>
-                    <p class="mb-1">friend music records PR<br />email: <a href="mailto:info@friendmusic.com" style={{ color: "var(--accent-primary)" }} class="underline hover:no-underline">info@friendmusic.com</a><br />phone: +1 (515) 418‑7894</p>
+                    <p class="mb-1">friend music records PR<br />email: <a href="mailto:info@friendmusicrecords.com" style={{ color: "var(--accent-primary)" }} class="underline hover:no-underline">info@friendmusicrecords.com</a><br />phone: +1 (515) 418‑7894</p>
                   </article>
                 </section>
               </Show>
@@ -637,9 +637,9 @@ export default function ArtistEPK() {
                   <div class="text-lg mb-4" style={{ color: "var(--text-primary)" }}>
                     <p class="font-semibold">friend music records</p>
                     <p style={{ color: "var(--text-secondary)" }}>Austin, TX</p>
-                    <a href="mailto:info@friendmusic.com" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>info@friendmusic.com</a>
+                    <a href="mailto:info@friendmusicrecords.com" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>info@friendmusicrecords.com</a>
                     <p class="mt-2">
-                      <a href="https://www.friendmusic.com" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>www.friendmusic.com</a>
+                      <a href="https://www.friendmusicrecords.com" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>www.friendmusicrecords.com</a>
                     </p>
                   </div>
                   <a 

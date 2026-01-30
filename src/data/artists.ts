@@ -41,7 +41,7 @@ Under friend music records, mozworth released their breakout single "Sandpiper" 
     },
     contact: {
       press: 'ryan@pressjunkiepr.com',
-      general: 'info@friendmusic.com'
+      general: 'info@friendmusicrecords.com'
     },
     epkPdf: '/mozworth-EPK.pdf'
   }
