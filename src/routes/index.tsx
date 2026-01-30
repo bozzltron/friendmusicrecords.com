@@ -38,12 +38,12 @@ export default function Home() {
           style={{ "background": "var(--bg-primary)" }}
         >
           {/* Hero Section */}
-          <div class="max-w-4xl mx-auto text-center mb-16">
+          <header class="max-w-4xl mx-auto text-center mb-16">
             {/* Logo */}
             <div class="mb-6 flex justify-center">
               <img 
                 src="/friendmusicrecords.webp" 
-                alt="friend music records" 
+                alt="friend music records logo - independent record label based in Austin, Texas" 
                 class="h-auto"
                 style={{ "max-width": "400px", "width": "400px" }}
                 width="400"
@@ -58,6 +58,7 @@ export default function Home() {
             <blockquote 
               class="text-2xl md:text-3xl font-mono mb-6 leading-relaxed italic"
               style={{ color: "var(--text-primary)" }}
+              cite="https://www.wilco.com"
             >
               "Feel free to make a record with your friends."
             </blockquote>
@@ -68,7 +69,7 @@ export default function Home() {
             >
               — Jeff Tweedy, "Feel Free"
             </p>
-          </div>
+          </header>
 
           {/* Featured Release Section */}
           <section class="max-w-5xl mx-auto mb-32">
@@ -123,10 +124,11 @@ export default function Home() {
                     class="text-xl mb-8"
                     style={{ color: "var(--text-secondary)" }}
                   >
-                    <A 
+                    by <A 
                       href="/artists/mozworth"
                       class="hover:underline"
                       style={{ color: "var(--text-primary)" }}
+                      aria-label="View mozworth artist page"
                     >
                       mozworth
                     </A>
@@ -136,7 +138,7 @@ export default function Home() {
                     class="text-base mb-16 leading-relaxed"
                     style={{ color: "var(--text-secondary)" }}
                   >
-                    A dreamy DIY reinterpretation of Daniel Johnston's classic, honoring the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes. Released January 22, 2026 on Hi, How Are You Day—a celebration of Daniel's birthday and Austin's city-wide reminder to check in on friends' mental health.
+                    A dreamy DIY reinterpretation of Daniel Johnston's classic song "Story of an Artist", honoring the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes. Released January 22, 2026 on Hi, How Are You Day—a celebration of Daniel Johnston's birthday and Austin's city-wide reminder to check in on friends' mental health.
                   </p>
                   
                   <div class="flex flex-wrap gap-3 justify-center md:justify-start mt-4">

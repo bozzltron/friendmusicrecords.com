@@ -79,6 +79,10 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      {/* AI/LLM specific metadata for better content understanding */}
+      <meta name="abstract" content={props.description} />
+      <meta name="topic" content="Independent Music, Record Label, Music Distribution" />
+      <meta name="summary" content={props.description} />
       
       {/* Enhanced Discovery */}
       <meta name="application-name" content="friend music records" />
@@ -154,6 +158,18 @@ export function createOrganizationData() {
         "name": "Record Label Services",
         "description": "Music distribution, artist development, and collaborative music production"
       }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@friendmusicrecords.com",
+      "contactType": "Customer Service",
+      "areaServed": "Worldwide",
+      "availableLanguage": "English"
     }
   };
 }
@@ -179,7 +195,13 @@ export function createArtistData(props: {
     "genre": props.genre,
     "recordLabel": {
       "@type": "RecordLabel",
-      "name": "friend music records"
+      "name": "friend music records",
+      "url": "https://www.friendmusicrecords.com"
+    },
+    "memberOf": {
+      "@type": "RecordLabel",
+      "name": "friend music records",
+      "url": "https://www.friendmusicrecords.com"
     },
     ...(props.location && {
       "location": {
@@ -214,15 +236,39 @@ export function createPressReleaseData(props: {
     "datePublished": props.datePublished,
     "dateModified": props.dateModified || props.datePublished,
     "author": {
-      "@type": "Organization",
-      "name": "friend music records"
+      "@type": "RecordLabel",
+      "name": "friend music records",
+      "url": "https://www.friendmusicrecords.com"
     },
     "publisher": {
-      "@type": "Organization",
-      "name": "friend music records"
+      "@type": "RecordLabel",
+      "name": "friend music records",
+      "url": "https://www.friendmusicrecords.com"
     },
     ...(props.image && { "image": props.image }),
-    "url": props.url
+    "url": props.url,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": props.url
+    },
+    "articleSection": "Music News",
+    "keywords": "music, record label, press release, music news"
+  };
+}
+
+/**
+ * Helper to generate BreadcrumbList structured data
+ */
+export function createBreadcrumbData(items: Array<{ name: string; url: string }>) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": items.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url
+    }))
   };
 }
 

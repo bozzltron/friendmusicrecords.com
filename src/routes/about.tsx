@@ -64,32 +64,46 @@ export default function About() {
             </figure>
 
             {/* Story */}
-            <div 
+            <section 
               class="max-w-2xl mx-auto text-center mb-12"
               style={{ color: "var(--text-primary)" }}
             >
+              <h2 class="sr-only">Origin Story</h2>
               <p 
                 class="text-xl md:text-2xl leading-relaxed font-mono mb-8"
                 style={{ color: "var(--text-primary)" }}
               >
                 friend music records began with boz asking his friend jeff to produce a new record with him. boz and jeff put out the first mozworth record with the the help of a team of new friends. jeff was inspired by the process of the mozworth record and asked boz to put his record out. boz and jeff are putting out jeff's record. thus, the birth of friend music records. welcome!
               </p>
-            </div>
+            </section>
 
             {/* Office Address */}
-            <div 
+            <section 
               class="max-w-2xl mx-auto text-center"
               style={{ color: "var(--text-secondary)" }}
+              aria-labelledby="office-address-heading"
             >
+              <h2 id="office-address-heading" class="sr-only">Office Address</h2>
               <address 
                 class="text-lg font-mono not-italic"
                 style={{ color: "var(--text-secondary)" }}
               >
-                <p class="mb-2">friend music records</p>
+                <p class="mb-2">
+                  <strong style={{ color: "var(--text-primary)" }}>friend music records</strong>
+                </p>
                 <p class="mb-2">9901 brodie lane suite 160-302</p>
                 <p>austin, tx 78748</p>
+                <p class="mt-4">
+                  <a 
+                    href="mailto:info@friendmusicrecords.com"
+                    class="hover:underline"
+                    style={{ color: "var(--text-primary)" }}
+                  >
+                    info@friendmusicrecords.com
+                  </a>
+                </p>
               </address>
-            </div>
+            </section>
           </article>
         </main>
 
