@@ -20,13 +20,13 @@ export default function Navigation() {
           aria-label="friend music records home"
         >
           <span 
-            class="text-xl font-mono inline md:hidden"
+            class="text-xl font-mono block md:hidden"
             style={{ color: "var(--text-primary)" }}
           >
             fm
           </span>
           <span 
-            class="text-xl font-mono hidden md:inline-block"
+            class="text-xl font-mono hidden md:block"
             style={{ color: "var(--text-primary)" }}
           >
             friend music
