@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <StandardMetadata
-        title="Page Not Found | Friend Music Records"
+        title="page not found | friend music records"
         description="The page you're looking for doesn't exist."
         url="https://www.friendmusic.com/404"
         type="website"
@@ -23,14 +23,14 @@ export default function NotFound() {
           <div class="max-w-2xl mx-auto text-center">
             {/* Error Message */}
             <h1 
-              class="text-6xl font-serif mb-4"
+              class="text-6xl font-mono mb-4"
               style={{ color: "var(--text-primary)" }}
             >
               404
             </h1>
             
             <h2 
-              class="text-3xl font-serif mb-6"
+              class="text-3xl font-mono mb-6"
               style={{ color: "var(--text-primary)" }}
             >
               Page Not Found
