@@ -1,0 +1,41 @@
+{
+  "name": "friend music records",
+  "short_name": "friend music",
+  "description": "Feel free to make a record with your friends. Independent record label celebrating collaborative music making.",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en-US",
+  "categories": ["music", "entertainment", "lifestyle"],
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "prefer_related_applications": false,
+  "related_applications": [],
+  "icons": [
+    {
+      "src": "/friendmusicrecords.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Artists",
+      "short_name": "Artists",
+      "description": "View all artists on the label",
+      "url": "/artists"
+    },
+    {
+      "name": "Press",
+      "short_name": "Press",
+      "description": "Latest press releases and news",
+      "url": "/press"
+    }
+  ]
+}
+
