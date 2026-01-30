@@ -40,7 +40,7 @@ email: info@friendmusicrecords.com
 phone: +1 (515) 418‑7894
 
 **About mozworth**
-mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
 
 **About Friend Music Records**
 Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
@@ -54,14 +54,14 @@ Friend Music Records is an independent record label based in Austin, Texas, dedi
     subtitle: 'A guitar-driven, ocean-soaked anthem inspired by myth, nature, and the quiet messengers all around us',
     date: '2025-09-15',
     artistId: 'mozworth',
-    excerpt: 'South Austin songwriter mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times.',
+    excerpt: 'South Austin four-piece band mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times.',
     content: `**FOR IMMEDIATE RELEASE**
 
 **mozworth Bridges Worlds with New Summer Single "Sandpiper"**
 
 *A guitar-driven, ocean-soaked anthem inspired by myth, nature, and the quiet messengers all around us*
 
-**AUSTIN, TX – August 21, 2025** — South Austin songwriter mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times. It follows this spring's The Sky Is Falling and acts as its emotional companion — where one named the fracture, the other seeks the bridge.
+**AUSTIN, TX – August 21, 2025** — South Austin four-piece band mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times. It follows this spring's The Sky Is Falling and acts as its emotional companion — where one named the fracture, the other seeks the bridge.
 
 The song took shape during a family trip to Surfside Beach, Texas — days filled with skimboarding, saltwater, and long walks along the shore. It was there that the sandpiper first caught mozworth's attention. "When you're walking along the coastline, you have the ocean to one side and land to the other. Ahead of you is that narrow strip of wet sand. That's where you find the sandpiper," he says.
 
@@ -86,7 +86,7 @@ info@friendmusicrecords.com
 friendmusicrecords.com
 
 **About mozworth**
-mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
 
 **About Friend Music Records**
 Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
@@ -107,7 +107,7 @@ Friend Music Records is an independent record label based in Austin, Texas, dedi
 
 **Austin, TX** — Just as 2025 shook the world with uncertainty, Austin-based indie outfit mozworth found their footing in the turbulence—and turned it into something unforgettable. Their new release "The Sky Is Falling" is a powerful single that captures the weight of living through history in real time. Equal parts raw and reflective, the song is both a document of our times and a deeply personal snapshot of a band coming into its own.
 
-Frontman and songwriter mozworth began writing "The Sky Is Falling" in the earliest days of 2025, a period marked by global unrest. What emerged from that fog was a sound that captures the tension of the moment—a song that feels like you are no longer in control but along for the ride. The project's title, borrowed from the fable of Chicken Little, is a poetic nod to the panic, misinformation, and distorted realities that defined this cultural moment.
+mozworth frontman Michael "Boz" Bosworth began writing "The Sky Is Falling" in the earliest days of 2025, a period marked by global unrest. What emerged from that fog was a sound that captures the tension of the moment—a song that feels like you are no longer in control but along for the ride. The project's title, borrowed from the fable of Chicken Little, is a poetic nod to the panic, misinformation, and distorted realities that defined this cultural moment.
 
 But "The Sky Is Falling" isn't just a personal reckoning—it's a band coming into full bloom. It marks the first recording with the full mozworth lineup: Mark Heaps (electric guitar), Jack Schultz (bass), and Ken Mockler (drums).
 
@@ -126,7 +126,7 @@ info@friendmusicrecords.com
 friendmusicrecords.com
 
 **About mozworth**
-mozworth is the musical project of Austin-based singer-songwriter Michael "Boz" Bosworth. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
 
 **About Friend Music Records**
 Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
