@@ -73,7 +73,7 @@ export default function About() {
                 class="text-xl md:text-2xl leading-relaxed font-mono mb-8"
                 style={{ color: "var(--text-primary)" }}
               >
-                friend music records began with boz asking his friend jeff to produce a new record with him. boz and jeff put out the first mozworth record with the the help of a team of new friends. jeff was inspired by the process of the mozworth record and asked boz to put his record out. boz and jeff are putting out jeff's record. thus, the birth of friend music records. welcome!
+                friend music records began with boz asking his friend jeff to produce a new record with him. boz and jeff put out the first mozworth record with the help of a team of new friends. jeff was inspired by the process of the mozworth record and asked boz to put his record out. boz and jeff are putting out jeff's record. thus, the birth of friend music records. welcome!
               </p>
             </section>
 
