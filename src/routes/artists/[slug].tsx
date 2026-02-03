@@ -154,19 +154,21 @@ export default function ArtistEPK() {
                       <p class="mb-4 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
                         A dreamy DIY reinterpretation of Daniel Johnston's classic, honoring the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes. Released on Hi, How Are You Day—a celebration of Daniel's birthday and Austin's city-wide reminder to check in on friends' mental health.
                       </p>
-                      <A 
-                        href={`/press/${artistPressReleases()[0]?.slug}`}
-                        class="inline-block px-6 py-3 rounded-full font-medium transition-colors focus:outline-none focus:ring-2"
-                        style={{ 
-                          "background": "transparent",
-                          "color": "var(--text-primary)",
-                          "border": "1px solid var(--border-default)",
-                          "focus:ring-color": "var(--focus-ring)"
-                        }}
-                        aria-label="View more information about Story of an Artist"
-                      >
-                        More Info
-                      </A>
+                      <Show when={artistPressReleases()[0]?.slug}>
+                        <A 
+                          href={`/press/${artistPressReleases()[0]!.slug}`}
+                          class="inline-block px-6 py-3 rounded-full font-medium transition-colors focus:outline-none focus:ring-2"
+                          style={{ 
+                            "background": "transparent",
+                            "color": "var(--text-primary)",
+                            "border": "1px solid var(--border-default)",
+                            "focus:ring-color": "var(--focus-ring)"
+                          }}
+                          aria-label="View more information about Story of an Artist"
+                        >
+                          More Info
+                        </A>
+                      </Show>
                     </div>
                   </article>
                 </section>

@@ -71,6 +71,53 @@ export default function Home() {
             </p>
           </header>
 
+          {/* Newsletter Signup Section */}
+          <section class="max-w-4xl mx-auto mb-32">
+            <div 
+              class="rounded-xl p-8 md:p-12 border text-center"
+              style={{ 
+                "background": "var(--bg-secondary)",
+                "border-color": "var(--border-default)"
+              }}
+            >
+              <h2 
+                class="text-3xl md:text-4xl font-mono mb-4"
+                style={{ color: "var(--text-primary)" }}
+              >
+                stay in the loop
+              </h2>
+              
+              <p 
+                class="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto"
+                style={{ color: "var(--text-secondary)" }}
+              >
+                join our newsletter for new releases, artist updates, and behind-the-scenes stories from friend music records.
+              </p>
+              
+              <a 
+                href="https://friendmusicrecords.beehiiv.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block px-8 py-4 rounded-md font-medium transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--bg-secondary)]"
+                style={{ 
+                  "background": "var(--accent-primary)",
+                  "color": "var(--bg-primary)",
+                  "focus:ring-color": "var(--focus-ring)"
+                }}
+                aria-label="Subscribe to friend music records newsletter"
+              >
+                subscribe →
+              </a>
+              
+              <p 
+                class="text-sm mt-6"
+                style={{ color: "var(--text-tertiary)" }}
+              >
+                no spam, just music. unsubscribe anytime.
+              </p>
+            </div>
+          </section>
+
           {/* Featured Release Section */}
           <section class="max-w-5xl mx-auto mb-32">
             <h2 
