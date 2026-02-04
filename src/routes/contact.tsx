@@ -52,6 +52,34 @@ export default function Contact() {
 
             {/* Contact Sections */}
             <div class="space-y-8">
+              {/* Mail Address */}
+              <section 
+                class="p-8 rounded-lg text-center"
+                style={{ 
+                  "background": "var(--bg-secondary)",
+                  "border": "1px solid var(--border-default)"
+                }}
+                aria-labelledby="mail-address-heading"
+              >
+                <h2 
+                  id="mail-address-heading"
+                  class="text-2xl font-mono mb-4"
+                  style={{ color: "var(--text-primary)" }}
+                >
+                  Mail Address
+                </h2>
+                <address 
+                  class="text-lg font-mono not-italic"
+                  style={{ color: "var(--text-secondary)" }}
+                >
+                  <p class="mb-2">
+                    <strong style={{ color: "var(--text-primary)" }}>friend music records</strong>
+                  </p>
+                  <p class="mb-2">9901 brodie lane suite 160-302</p>
+                  <p>austin, tx 78748</p>
+                </address>
+              </section>
+
               {/* Press Inquiries */}
               <section 
                 class="p-8 rounded-lg text-center"
