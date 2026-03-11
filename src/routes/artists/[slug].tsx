@@ -1,10 +1,9 @@
 import { Show, For } from "solid-js";
 import { useParams, A } from "@solidjs/router";
-import { StandardMetadata, createArtistData } from "../../utils/metadata";
+import Layout from "../../components/Layout";
+import { StandardMetadata, createArtistData, createBreadcrumbData } from "../../utils/metadata";
 import { getArtistBySlug } from "../../data/artists";
 import { pressReleases } from "../../data/pressReleases";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
 
 export default function ArtistEPK() {
   const params = useParams();
@@ -61,31 +60,23 @@ export default function ArtistEPK() {
           genre: artist.genre,
           location: artist.location,
         })}
+        breadcrumbData={createBreadcrumbData([
+          { name: "Home", url: "https://friendmusicrecords.com" },
+          { name: "Artists", url: "https://friendmusicrecords.com/artists" },
+          { name: artist.name, url: `https://friendmusicrecords.com/artists/${artist.slug}/` }
+        ])}
       />
 
-      <div class="flex flex-col min-h-screen">
-        <a 
-          href="#main-content" 
-          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 px-4 py-2 rounded focus:outline-none focus:ring-2 z-50"
-          style={{ 
-            "background": "var(--accent-primary)",
-            "color": "var(--bg-primary)"
-          }}
-        >
-          Skip to main content
-        </a>
-
-        <Navigation />
-        
-        <main 
-          id="main-content" 
-          class="flex-1 px-4 py-16" 
+      <Layout>
+        <main
+          id="main-content"
+          class="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
           role="main"
-          style={{ "background": "var(--bg-primary)" }}
+          style={{ background: "var(--bg-primary)" }}
         >
-          <div class="max-w-5xl mx-auto">
+          <div class="max-w-content mx-auto">
             <div 
-              class="rounded-xl p-6 md:p-10 border" 
+              class="rounded-xl p-4 sm:p-6 md:p-10 border" 
               style={{ 
                 "background": "var(--bg-secondary)", 
                 "border-color": "var(--border-default)" 
@@ -93,11 +84,11 @@ export default function ArtistEPK() {
             >
               
               {/* Hero Section */}
-              <div class="text-center mb-10">
+              <div class="text-center mb-8 sm:mb-10">
                 <img 
                   src={artist.image.thumbnail} 
                   alt={`${artist.name} logo`} 
-                  class="w-32 mb-4 mx-auto"
+                  class="w-32 h-32 mb-4 mx-auto object-contain"
                   width="128"
                   height="128"
                   loading="eager"
@@ -156,7 +147,7 @@ export default function ArtistEPK() {
                       </p>
                       <Show when={artistPressReleases()[0]?.slug}>
                         <A 
-                          href={`/press/${artistPressReleases()[0]!.slug}`}
+                          href={`/press/${artistPressReleases()[0]?.slug}`}
                           class="inline-block px-6 py-3 rounded-full font-medium transition-colors focus:outline-none focus:ring-2"
                           style={{ 
                             "background": "transparent",
@@ -508,45 +499,13 @@ export default function ArtistEPK() {
                   <h2 id="press-coverage-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Press Coverage</h2>
                   <div class="space-y-6">
                     <div class="border-b pb-6 last:border-b-0 last:pb-0" style={{ "border-color": "var(--border-default)" }}>
-                      <h3 class="text-xl font-mono mb-3" style={{ color: "var(--text-primary)" }}>Plastic Magazine</h3>
-                      <p class="text-sm mb-3" style={{ color: "var(--text-tertiary)" }}>September 22, 2025</p>
+                      <h3 class="text-xl font-mono mb-3" style={{ color: "var(--text-primary)" }}>musikepool</h3>
+                      <p class="text-sm mb-3" style={{ color: "var(--text-tertiary)" }}>January 2026</p>
                       <p class="mb-3 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                        Plastic Magazine praises "Sandpiper" as "a spectacular alternative jam that's timeless and truly absorbing throughout," highlighting the track's "intricate ebb and flow between the mellow verses and charge of exhilarating choruses." The review celebrates mozworth's "songwriting flair and performance talent" and calls it "an incredible display" of his musical evolution.
+                        musikepool calls mozworth's <em>Story of an Artist</em> "a heartfelt tribute that feels both tender and alive—Daniel Johnston's spirit resonates through every note." The review highlights the mix of mandolin, upright bass, and restrained guitar creating "a sound that is warm, organic, and slightly dreamy," and praises Michael Bosworth's emotive vocals. "Story of an Artist is more than a cover—it's a respectful conversation with a musical icon."
                       </p>
                       <a 
-                        href="https://plasticmag.co.uk/2025/09/mozworth-drops-new-single-sandpiper/" 
-                        target="_blank" 
-                        rel="noopener" 
-                        class="underline font-medium hover:no-underline"
-                        style={{ color: "var(--accent-primary)" }}
-                      >
-                        Read Full Review →
-                      </a>
-                    </div>
-                    <div class="border-b pb-6 last:border-b-0 last:pb-0" style={{ "border-color": "var(--border-default)" }}>
-                      <h3 class="text-xl font-mono mb-3" style={{ color: "var(--text-primary)" }}>The Big Takeover</h3>
-                      <p class="text-sm mb-3" style={{ color: "var(--text-tertiary)" }}>September 17, 2025</p>
-                      <p class="mb-3 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                        The Big Takeover praises "Sandpiper" for its depth and duality, describing it as music that "ebbs and flows between folky understatement and the roar of rock and roll at its finest" and calling it "a blend of indie delicacy, rock muscle, psychedelic colour, and surf finesse."
-                      </p>
-                      <a 
-                        href="https://bigtakeover.com/recordings/mozworth-sandpiper-balanced-scale-media" 
-                        target="_blank" 
-                        rel="noopener" 
-                        class="underline font-medium hover:no-underline"
-                        style={{ color: "var(--accent-primary)" }}
-                      >
-                        Read Full Review →
-                      </a>
-                    </div>
-                    <div class="border-b pb-6 last:border-b-0 last:pb-0" style={{ "border-color": "var(--border-default)" }}>
-                      <h3 class="text-xl font-mono mb-3" style={{ color: "var(--text-primary)" }}>It's All Indie</h3>
-                      <p class="text-sm mb-3" style={{ color: "var(--text-tertiary)" }}>September 14, 2025</p>
-                      <p class="mb-3 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                        It's All Indie describes "Sandpiper" as "a clear-cut slice of shimmering indie-pop with a slightly scuzzy undertone of grunge guitar sounds" and praises the track as "a breezy indie-pop gem with grungy undertones, jangly new-wave hooks, and lush melodies."
-                      </p>
-                      <a 
-                        href="https://www.itsallindie.com/2025/09/mozworth-reveals-bold-new-single.html" 
+                        href="https://musikepool.com/story-of-an-artist-mozworth/" 
                         target="_blank" 
                         rel="noopener" 
                         class="underline font-medium hover:no-underline"
@@ -586,23 +545,17 @@ export default function ArtistEPK() {
                   aria-labelledby="credits-heading"
                 >
                   <h2 id="credits-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Credits - Story of an Artist</h2>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-3" style={{ color: "var(--text-secondary)" }}>
-                    <div>
-                      <p class="mb-2">Written by Daniel Johnston</p>
-                      <p class="mb-2">Arrangement by Michael Bosworth</p>
-                      <p class="mb-2">Produced by Michael Bosworth</p>
-                    </div>
-                    <div>
-                      <p class="mb-2">Electric Guitar and Vocals performed by Michael Bosworth</p>
-                      <p class="mb-2">Mandolin performed by Mark Heaps</p>
-                      <p class="mb-2">Upright Bass performed by Jack Schultz</p>
-                      <p class="mb-2">Drums and Auxiliary Percussion performed by Mike Hall</p>
-                    </div>
-                    <div class="md:col-span-2">
-                      <p class="mb-2">Recorded by Michael Bosworth (mandolin, bass, guitar, vocals at mozworth's South-Austin space) and Mike Hall (drums and auxiliary percussion at Mike Hall's home studio)</p>
-                      <p class="mb-2">Mixed and Mastered by Steven Glaze at <a href="https://stevenglaze.com/" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>Tone Freq Studios</a></p>
-                      <p class="mb-2">Vintage microphones and preamps borrowed from Josh Wolfer</p>
-                    </div>
+                  <div class="space-y-4" style={{ color: "var(--text-secondary)" }}>
+                    <p class="mb-2">Written by Daniel Johnston</p>
+                    <p class="mb-2">Arrangement by Michael Bosworth</p>
+                    <p class="mb-2">Produced by Michael Bosworth</p>
+                    <p class="mb-2">Electric Guitar and Vocals performed by Michael Bosworth</p>
+                    <p class="mb-2">Mandolin performed by Mark Heaps</p>
+                    <p class="mb-2">Upright Bass performed by Jack Schultz</p>
+                    <p class="mb-2">Drums and Auxiliary Percussion performed by Mike Hall</p>
+                    <p class="mb-2">Recorded by Michael Bosworth (mandolin, bass, guitar, vocals at mozworth's South-Austin space) and Mike Hall (drums and auxiliary percussion at Mike Hall's home studio)</p>
+                    <p class="mb-2">Mixed and Mastered by Steven Glaze at <a href="https://stevenglaze.com/" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>Tone Freq Studios</a></p>
+                    <p class="mb-2">Vintage microphones and preamps borrowed from Josh Wolfer</p>
                   </div>
                 </section>
               </Show>
@@ -662,9 +615,7 @@ export default function ArtistEPK() {
             </div>
           </div>
         </main>
-
-        <Footer />
-      </div>
+      </Layout>
     </>
   );
 }

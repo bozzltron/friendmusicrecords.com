@@ -30,15 +30,15 @@ export default function ArtistCard(props: ArtistCardProps) {
           <img 
             src={props.artist.image.thumbnail} 
             alt={props.artist.name}
-            class="w-24 h-24 object-contain"
+            class="w-20 h-20 sm:w-24 sm:h-24 object-contain"
           />
         </div>
 
         {/* Content */}
-        <div class="p-6">
+        <div class="p-4 sm:p-6">
           {/* Artist Name */}
           <h3 
-            class="text-2xl font-mono mb-4"
+            class="text-xl sm:text-2xl font-mono mb-3 sm:mb-4"
             style={{ color: "var(--text-primary)" }}
           >
             {props.artist.name}

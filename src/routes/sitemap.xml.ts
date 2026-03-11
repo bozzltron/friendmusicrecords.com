@@ -1,8 +1,7 @@
-import { APIEvent } from "@solidjs/start/server";
 import { artists } from "../data/artists";
 import { pressReleases } from "../data/pressReleases";
 
-export async function GET({ request }: APIEvent) {
+export async function GET() {
   const baseUrl = "https://friendmusicrecords.com";
   const currentDate = new Date().toISOString();
 

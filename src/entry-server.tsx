@@ -18,6 +18,7 @@ export default createHandler(() => (
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/friendmusicrecords.webp" type="image/webp" />
           <link rel="apple-touch-icon" href="/friendmusicrecords.webp" />
+          <link rel="alternate" type="application/rss+xml" title="friend music records press" href="https://friendmusicrecords.com/feed.xml" />
           
           {/* Preconnect to external resources - Performance optimization */}
           <link rel="preconnect" href="https://bandcamp.com" crossorigin="anonymous" />
@@ -25,9 +26,10 @@ export default createHandler(() => (
           <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous" />
           <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
           
-          {/* Theme & PWA */}
+          {/* Theme & PWA - color-scheme supports dark (default) and light */}
+          <meta name="color-scheme" content="dark light" />
           <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
-          <meta name="theme-color" content="#121212" media="(prefers-color-scheme: light)" />
+          <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta name="apple-mobile-web-app-title" content="friend music" />

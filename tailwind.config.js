@@ -3,6 +3,13 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      // Consistent content width across pages (responsive)
+      // Best practice: 800-1200px for readability; 960px caps ultra-wide stretch
+      // Sources: New Target, Baymard Institute, Nielsen Norman Group
+      maxWidth: {
+        'content': '60rem',   // 960px - primary content, readable on ultra-wide
+        'content-narrow': '48rem',  // 768px - focused sections (newsletter, contact)
+      },
       colors: {
         // Background colors
         'bg-primary': '#0a0a0a',     // Near black - main background

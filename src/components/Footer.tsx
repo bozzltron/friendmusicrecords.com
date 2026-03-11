@@ -3,7 +3,7 @@ export default function Footer() {
 
   return (
     <footer 
-      class="w-full text-center text-xs py-6 px-4 border-t mt-auto"
+      class="w-full text-center text-xs py-4 sm:py-6 px-4 sm:px-6 lg:px-8 border-t mt-auto"
       role="contentinfo"
       style={{ 
         "background": "var(--bg-primary)",
@@ -11,8 +11,8 @@ export default function Footer() {
         "border-color": "var(--border-default)"
       }}
     >
-      <div class="max-w-6xl mx-auto">
-        <p>&copy; {currentYear} friend music records. All rights reserved.</p>
+      <div class="max-w-content mx-auto">
+        <p>&copy; {currentYear} friend music records. Founded 2026. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -76,7 +76,7 @@ export default function App() {
                   "color": "var(--text-primary)"
                 }}
               >
-                <div class="mx-auto max-w-3xl px-4 py-3 flex items-center justify-between gap-3">
+                <div class="mx-auto max-w-content-narrow px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
                   <span class="text-sm">A new version is available.</span>
                   <div class="flex items-center gap-2">
                     <button
@@ -86,7 +86,10 @@ export default function App() {
                         "color": "var(--bg-primary)",
                         "focus:ring-color": "var(--focus-ring)"
                       }}
-                      onClick={() => { setUpdateReady(false); doUpdate && doUpdate(true); }}
+                      onClick={() => {
+                        setUpdateReady(false);
+                        if (doUpdate) doUpdate(true);
+                      }}
                     >
                       Reload
                     </button>

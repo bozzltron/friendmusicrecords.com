@@ -30,6 +30,7 @@ export interface Artist {
     bluesky?: string;
     tiktok?: string;
     soundcloud?: string;
+    reddit?: string;
   };
   contact?: {
     press?: string;

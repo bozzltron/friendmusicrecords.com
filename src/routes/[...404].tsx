@@ -14,23 +14,35 @@ export default function NotFound() {
       />
       
       <div class="flex flex-col min-h-screen">
+        <a 
+          href="#main-content" 
+          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 px-4 py-2 rounded focus:outline-none focus:ring-2 z-50"
+          style={{ 
+            "background": "var(--accent-primary)",
+            "color": "var(--bg-primary)",
+            "focus:ring-color": "var(--focus-ring)"
+          }}
+        >
+          Skip to main content
+        </a>
         <Navigation />
         
         <main 
-          class="flex-1 flex items-center justify-center px-4 py-16"
+          id="main-content"
+          class="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
           style={{ "background": "var(--bg-primary)" }}
         >
-          <div class="max-w-2xl mx-auto text-center">
+          <div class="max-w-content-narrow mx-auto text-center">
             {/* Error Message */}
             <h1 
-              class="text-6xl font-mono mb-4"
+              class="text-5xl sm:text-6xl font-mono mb-4"
               style={{ color: "var(--text-primary)" }}
             >
               404
             </h1>
             
             <h2 
-              class="text-3xl font-mono mb-6"
+              class="text-2xl sm:text-3xl font-mono mb-6"
               style={{ color: "var(--text-primary)" }}
             >
               Page Not Found

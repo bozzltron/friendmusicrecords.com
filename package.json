@@ -1,5 +1,5 @@
 {
-  "name": "friendmusic.com",
+  "name": "friendmusicrecords.com",
   "type": "module",
   "version": "1.0.0",
   "description": "Independent record label website - dark minimalist design showcasing artists, releases, and label ethos",
@@ -7,8 +7,8 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",

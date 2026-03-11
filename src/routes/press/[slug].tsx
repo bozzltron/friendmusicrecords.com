@@ -1,17 +1,16 @@
 import { Show } from "solid-js";
 import { useParams, A } from "@solidjs/router";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
-import { StandardMetadata, createPressReleaseData } from "../../utils/metadata";
+import Layout from "../../components/Layout";
+import { StandardMetadata, createPressReleaseData, createBreadcrumbData } from "../../utils/metadata";
 import { getPressReleaseBySlug } from "../../data/pressReleases";
-import { getArtistBySlug } from "../../data/artists";
+import { getArtistById } from "../../data/artists";
 
 export default function PressReleasePage() {
   const params = useParams();
   const pressRelease = getPressReleaseBySlug(params.slug);
   
   // Get associated artist if this is an artist press release
-  const artist = () => pressRelease?.artistId ? getArtistBySlug(pressRelease.artistId) : undefined;
+  const artist = () => pressRelease?.artistId ? getArtistById(pressRelease.artistId) : undefined;
 
   // If press release not found, show 404
   if (!pressRelease) {
@@ -59,30 +58,21 @@ export default function PressReleasePage() {
           image: artist()?.image.hero,
           url: `https://friendmusicrecords.com/press/${pressRelease.slug}/`
         })}
+        breadcrumbData={createBreadcrumbData([
+          { name: "Home", url: "https://friendmusicrecords.com" },
+          { name: "Press", url: "https://friendmusicrecords.com/press" },
+          { name: pressRelease.title, url: `https://friendmusicrecords.com/press/${pressRelease.slug}/` }
+        ])}
       />
 
-      <div class="flex flex-col min-h-screen">
-        <a 
-          href="#main-content" 
-          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 px-4 py-2 rounded focus:outline-none focus:ring-2 z-50"
-          style={{ 
-            "background": "var(--accent-primary)",
-            "color": "var(--bg-primary)",
-            "focus:ring-color": "var(--focus-ring)"
-          }}
-        >
-          Skip to main content
-        </a>
-
-        <Navigation />
-        
-        <main 
-          id="main-content" 
-          class="flex-1 px-4 py-16" 
+      <Layout>
+        <main
+          id="main-content"
+          class="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
           role="main"
-          style={{ "background": "var(--bg-primary)" }}
+          style={{ background: "var(--bg-primary)" }}
         >
-          <div class="max-w-4xl mx-auto">
+          <div class="max-w-content mx-auto">
             {/* Breadcrumb */}
             <nav aria-label="Breadcrumb" class="mb-8 text-sm">
               <ol class="flex items-center space-x-2" style={{ color: "var(--text-secondary)" }}>
@@ -215,9 +205,7 @@ export default function PressReleasePage() {
             </div>
           </div>
         </main>
-
-        <Footer />
-      </div>
+      </Layout>
     </>
   );
 }

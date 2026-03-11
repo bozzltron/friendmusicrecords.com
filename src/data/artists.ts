@@ -9,9 +9,9 @@ export const artists: Artist[] = [
       short: 'Austin-based four-piece indie alternative rock band blending \'90s nostalgia with modern vulnerability. Guitar-driven songs about myth, nature, and the human experience.',
       full: `mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
 
-With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day) and international music publications including Plastic Magazine, The Big Takeover, and It's All Indie. Their songwriting blends personal narrative with universal themes, crafted through collaborative sessions that capture the complexity of modern life with honesty, melody, and raw power.
+With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day) and international music publications. Their songwriting blends personal narrative with universal themes, crafted through collaborative sessions that capture the complexity of modern life with honesty, melody, and raw power.
 
-Under friend music records, mozworth released their breakout single "Sandpiper" in September 2025, an ocean-soaked anthem inspired by myth, nature, and the quiet messengers all around us. The track showcases their signature blend of indie delicacy, rock muscle, psychedelic color, and surf finesse—earning critical acclaim from both domestic and international press.`
+Under friend music records, mozworth released their cover of Daniel Johnston's "Story of an Artist" in January 2026—coinciding with Johnston's birthday and Austin's Hi, How Are You Day. The dreamy DIY reinterpretation honors the original with mandolin, upright bass, and restrained guitar, earning praise from musikepool and beyond.`
     },
     genre: ['Indie Rock', 'Alternative Rock'],
     location: {
@@ -40,7 +40,7 @@ Under friend music records, mozworth released their breakout single "Sandpiper" 
       reddit: 'https://www.reddit.com/user/mozworth/'
     },
     contact: {
-      press: 'ryan@pressjunkiepr.com',
+      press: 'info@friendmusicrecords.com',
       general: 'info@friendmusicrecords.com'
     },
     epkPdf: '/mozworth-EPK.pdf'
@@ -49,7 +49,11 @@ Under friend music records, mozworth released their breakout single "Sandpiper" 
 
 // Helper functions
 export function getArtistBySlug(slug: string): Artist | undefined {
-  return artists.find(artist => artist.slug === slug);
+  return artists.find((artist) => artist.slug === slug);
+}
+
+export function getArtistById(id: string): Artist | undefined {
+  return artists.find((artist) => artist.id === id);
 }
 
 export function getFeaturedArtists(): Artist[] {

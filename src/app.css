@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+/* Content width for large screens - cap layout at 960px for readability */
+@layer utilities {
+  .max-w-content {
+    max-width: 60rem; /* 960px */
+  }
+  .max-w-content-narrow {
+    max-width: 48rem; /* 768px */
+  }
+}
+
 @layer base {
   /* Remove default margins - but allow Tailwind utilities to override */
   h1, h2, h3, h4, h5, h6, p {
@@ -7,30 +17,49 @@
   }
 }
 
+/* Dark theme (default) */
 :root {
+  color-scheme: dark;
   /* Background Colors - Softer than pure black */
   --bg-primary: #121212;
   --bg-secondary: #1a1a1a;
   --bg-tertiary: #242424;
-  
   /* Text Colors - Softer than pure white */
   --text-primary: #e8e8e8;
   --text-secondary: #a3a3a3;
   --text-tertiary: #737373;
-  
   /* Accent Colors */
   --accent-primary: #d4d4d4;
   --accent-secondary: #525252;
-  
-  /* Border Colors - Subtle, darker borders */
+  /* Border Colors */
   --border-default: #1c1c1c;
   --border-hover: #252525;
   --focus-ring: #d4d4d4;
-  
   /* Button Colors */
   --button-bg: #1f1f1f;
   --button-bg-hover: #2a2a2a;
   --button-text: #e8e8e8;
+}
+
+/* Light theme - respects system preference */
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg-primary: #f5f5f5;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e8e8e8;
+    --text-primary: #1a1a1a;
+    --text-secondary: #525252;
+    --text-tertiary: #737373;
+    --accent-primary: #262626;
+    --accent-secondary: #a3a3a3;
+    --border-default: #e5e5e5;
+    --border-hover: #d4d4d4;
+    --focus-ring: #262626;
+    --button-bg: #e5e5e5;
+    --button-bg-hover: #d4d4d4;
+    --button-text: #1a1a1a;
+  }
 }
 
 body {
@@ -99,7 +128,7 @@ html {
   }
 }
 
-/* High contrast mode support */
+/* High contrast mode - overrides light/dark */
 @media (prefers-contrast: high) {
   :root {
     --text-primary: #ffffff;
@@ -109,6 +138,16 @@ html {
     --button-bg: #ffffff;
     --button-text: #000000;
   }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --text-primary: #000000;
+      --text-secondary: #1a1a1a;
+      --bg-primary: #ffffff;
+      --border-default: #000000;
+      --button-bg: #000000;
+      --button-text: #ffffff;
+    }
+  }
 }
 
 /* Ensure sufficient color contrast */
@@ -117,10 +156,8 @@ html {
   color: var(--bg-primary);
 }
 
-/* Improve readability */
-p, li, td {
-  max-width: 75ch;
-}
+/* Line length: controlled by Tailwind max-w-* on containers, not globally.
+   Use max-w-content for main layouts, max-w-content-narrow for focused sections. */
 
 /* Monospace font for all text elements */
 * {
@@ -132,9 +169,8 @@ body {
   line-height: 1.6;
 }
 
-/* Ensure images don't overflow */
+/* Images: preserve aspect ratio (no max-width constraint—use explicit sizing per image) */
 img {
-  max-width: 100%;
   height: auto;
 }
 

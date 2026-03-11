@@ -1,4 +1,5 @@
 import type { JSX } from "solid-js";
+import { LABEL } from "../data/label";
 
 interface MetadataProps {
   // Required
@@ -17,6 +18,7 @@ interface MetadataProps {
   
   // Additional structured data
   structuredData?: Record<string, unknown>;
+  breadcrumbData?: Record<string, unknown>;
 }
 
 /**
@@ -104,6 +106,11 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
           {JSON.stringify(props.structuredData, null, 0).replace(/</g, '\\u003c')}
         </script>
       )}
+      {props.breadcrumbData && (
+        <script type="application/ld+json">
+          {JSON.stringify(props.breadcrumbData, null, 0).replace(/</g, '\\u003c')}
+        </script>
+      )}
     </>
   );
 }
@@ -115,12 +122,12 @@ export function createOrganizationData() {
   return {
     "@context": "https://schema.org",
     "@type": "RecordLabel",
-    "name": "friend music records",
-    "alternateName": "friend music",
-    "legalName": "Friend Music Records", // Legal name requires proper capitalization
-    "url": "https://friendmusicrecords.com",
+    "name": LABEL.name,
+    "alternateName": LABEL.shortName,
+    "legalName": "Friend Music Records",
+    "url": LABEL.url,
     "description": "Feel free to make a record with your friends. Independent record label celebrating collaborative music making.",
-    "foundingDate": "2024",
+    "foundingDate": "2026",
     "foundingLocation": {
       "@type": "Place",
       "address": {
@@ -142,10 +149,9 @@ export function createOrganizationData() {
     },
     "areaServed": "Worldwide",
     "slogan": "Feel free to make a record with your friends",
-    "email": "info@friendmusicrecords.com",
+    "email": LABEL.email,
     "knowsAbout": ["Independent Music", "Collaborative Music", "Music Production", "Alternative Rock", "Indie Rock", "Music Distribution", "Record Label", "Artist Development"],
     "sameAs": [],
-    "foundingDate": "2024",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
       "value": "1-10"
@@ -159,14 +165,9 @@ export function createOrganizationData() {
         "description": "Music distribution, artist development, and collaborative music production"
       }
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "1"
-    },
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "info@friendmusicrecords.com",
+      "email": LABEL.email,
       "contactType": "Customer Service",
       "areaServed": "Worldwide",
       "availableLanguage": "English"
@@ -195,13 +196,13 @@ export function createArtistData(props: {
     "genre": props.genre,
     "recordLabel": {
       "@type": "RecordLabel",
-      "name": "friend music records",
-      "url": "https://friendmusicrecords.com"
+      "name": LABEL.name,
+      "url": LABEL.url
     },
     "memberOf": {
       "@type": "RecordLabel",
-      "name": "friend music records",
-      "url": "https://friendmusicrecords.com"
+      "name": LABEL.name,
+      "url": LABEL.url
     },
     ...(props.location && {
       "location": {
@@ -237,13 +238,13 @@ export function createPressReleaseData(props: {
     "dateModified": props.dateModified || props.datePublished,
     "author": {
       "@type": "RecordLabel",
-      "name": "friend music records",
-      "url": "https://friendmusicrecords.com"
+      "name": LABEL.name,
+      "url": LABEL.url
     },
     "publisher": {
       "@type": "RecordLabel",
-      "name": "friend music records",
-      "url": "https://friendmusicrecords.com"
+      "name": LABEL.name,
+      "url": LABEL.url
     },
     ...(props.image && { "image": props.image }),
     "url": props.url,

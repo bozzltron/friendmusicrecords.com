@@ -3,7 +3,7 @@ import { A } from "@solidjs/router";
 export default function Navigation() {
   return (
     <nav 
-      class="w-full py-6 px-4 border-b"
+      class="w-full py-4 sm:py-6 px-4 sm:px-6 lg:px-8 border-b"
       style={{ 
         "background": "var(--bg-primary)",
         "border-color": "var(--border-default)"
@@ -11,7 +11,7 @@ export default function Navigation() {
       aria-label="Main navigation"
       role="navigation"
     >
-      <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="max-w-content mx-auto flex items-center justify-between">
         {/* Logo */}
         <A 
           href="/" 
@@ -34,7 +34,7 @@ export default function Navigation() {
         </A>
 
         {/* Navigation Links */}
-        <div class="flex items-center gap-6">
+        <div class="flex items-center gap-4 sm:gap-6">
           <A 
             href="/" 
             class="text-base transition-colors focus:outline-none focus:ring-2 rounded px-2 py-1"
@@ -42,8 +42,8 @@ export default function Navigation() {
               "color": "var(--text-secondary)",
               "focus:ring-color": "var(--focus-ring)"
             }}
-            activeClass="text-primary"
-            inactiveClass="hover:text-primary"
+            activeClass="text-accent-primary"
+            inactiveClass="hover:text-accent-primary"
           >
             Home
           </A>
@@ -54,8 +54,8 @@ export default function Navigation() {
               "color": "var(--text-secondary)",
               "focus:ring-color": "var(--focus-ring)"
             }}
-            activeClass="text-primary"
-            inactiveClass="hover:text-primary"
+            activeClass="text-accent-primary"
+            inactiveClass="hover:text-accent-primary"
           >
             About
           </A>
@@ -66,8 +66,8 @@ export default function Navigation() {
               "color": "var(--text-secondary)",
               "focus:ring-color": "var(--focus-ring)"
             }}
-            activeClass="text-primary"
-            inactiveClass="hover:text-primary"
+            activeClass="text-accent-primary"
+            inactiveClass="hover:text-accent-primary"
           >
             Artists
           </A>
@@ -78,8 +78,8 @@ export default function Navigation() {
               "color": "var(--text-secondary)",
               "focus:ring-color": "var(--focus-ring)"
             }}
-            activeClass="text-primary"
-            inactiveClass="hover:text-primary"
+            activeClass="text-accent-primary"
+            inactiveClass="hover:text-accent-primary"
           >
             Press
           </A>
@@ -90,8 +90,8 @@ export default function Navigation() {
               "color": "var(--text-secondary)",
               "focus:ring-color": "var(--focus-ring)"
             }}
-            activeClass="text-primary"
-            inactiveClass="hover:text-primary"
+            activeClass="text-accent-primary"
+            inactiveClass="hover:text-accent-primary"
           >
             Contact
           </A>

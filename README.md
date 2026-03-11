@@ -8,7 +8,10 @@ Independent record label website - dark minimalist design showcasing artists, re
 - **Brand Consistency**: Maintain consistent lowercase brand name and monospace typography across all pages
 - **SEO Optimization**: Optimize for search engines with proper metadata, structured data, and semantic HTML
 - **Performance**: Fast loading times, optimized images, and efficient code
-- **Accessibility**: WCAG compliant with proper ARIA labels, semantic HTML, and keyboard navigation
+- **Accessibility**: WCAG compliant with proper ARIA labels, semantic HTML, keyboard navigation, and color-scheme support (dark default, light mode when user prefers)
+- **Color Scheme Support**: Dark mode by default; light mode when the user's system preference is light. Respects `prefers-color-scheme` for accessibility and readability.
+- **Responsive Design**: Optimized for all screens and devices—mobile-first with Tailwind breakpoints (sm/md/lg/xl), fluid layouts, appropriate tap targets, and consistent content width across viewports
+- **Press & RSS**: Maintain a press page with an RSS feed. Content lives in `src/data/pressReleases.ts`; same data powers press pages and `/feed.xml` at build time. No CMS—minimal code, single source of truth.
 - **LLM Optimization**: Optimize content structure and metadata for Large Language Models (LLMs) and AI systems to accurately understand and represent the label's information
 
 ### LLM Optimization Goals
@@ -73,6 +76,14 @@ The site is optimized for LLMs and AI systems that may crawl and index the conte
 - **TypeScript**: Full TypeScript support throughout
 - **Node**: Requires Node.js >=22
 
+### Responsive Design (Tailwind)
+
+- **Breakpoints**: `sm:` 640px, `md:` 768px, `lg:` 1024px, `xl:` 1280px
+- **Content widths**: `max-w-content` (60rem / 960px) primary—caps ultra-wide for readability; `max-w-content-narrow` (48rem / 768px) for focused sections
+- **Spacing**: Responsive padding (`px-4 sm:px-6 lg:px-8`) and margins (`mb-8 sm:mb-12`) scale with viewport
+- **Typography**: Fluid heading sizes (`text-4xl sm:text-5xl`) for readability across devices
+- **Touch targets**: 44×44px minimum on interactive elements (pointer: coarse) for mobile
+
 ## Development
 
 ```bash
@@ -92,12 +103,19 @@ src/
 ├── routes/         # File-based routing
 │   ├── about.tsx  # About page
 │   ├── artists/   # Artist pages
-│   ├── press/     # Press release pages
+│   ├── press/     # Press release pages (also serves as blog)
+│   ├── feed.xml.ts # RSS feed (from press releases)
 │   └── contact.tsx
-├── data/           # Static data files
+├── data/           # Static data files (pressReleases.ts = press + RSS source)
 ├── types/          # TypeScript type definitions
 └── utils/          # Utility functions
 ```
+
+## Press & RSS Maintenance
+
+- **Single source**: `src/data/pressReleases.ts` — add one object per press release
+- **No extra tooling**: Same data drives `/press`, `/press/[slug]`, and `/feed.xml`
+- **To add a release**: Edit `pressReleases.ts`, add a new object with required fields, run `npm run build`
 
 ## LLM Optimization Best Practices
 

@@ -1,6 +1,6 @@
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 import { StandardMetadata } from "../utils/metadata";
+import { LABEL } from "../data/label";
 
 export default function About() {
   return (
@@ -13,30 +13,17 @@ export default function About() {
         keywords="about friend music records, collaborative music, independent music, music community, music collaboration, record label, austin music"
       />
       
-      <div class="flex flex-col min-h-screen">
-        <a 
-          href="#main-content" 
-          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 px-4 py-2 rounded focus:outline-none focus:ring-2 z-50"
-          style={{ 
-            "background": "var(--accent-primary)",
-            "color": "var(--bg-primary)"
-          }}
+      <Layout>
+        <main
+          id="main-content"
+          class="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
+          style={{ background: "var(--bg-primary)" }}
         >
-          Skip to main content
-        </a>
-
-        <Navigation />
-        
-        <main 
-          id="main-content" 
-          class="flex-1 px-4 py-16"
-          style={{ "background": "var(--bg-primary)" }}
-        >
-          <article class="max-w-4xl mx-auto">
+          <article class="max-w-content mx-auto">
             {/* Heading */}
-            <header class="mb-12 text-center">
+            <header class="mb-8 sm:mb-12 text-center">
               <h1 
-                class="text-5xl font-mono mb-4"
+                class="text-4xl sm:text-5xl font-mono mb-4"
                 style={{ color: "var(--text-primary)" }}
               >
                 about
@@ -44,11 +31,11 @@ export default function About() {
             </header>
 
             {/* Image */}
-            <figure class="mb-12 flex flex-col items-center">
+            <figure class="mb-8 sm:mb-12 flex flex-col items-center">
               <img 
                 src="/jeffnmike.webp" 
                 alt="Boz and Jeff in the mozworth studio in Austin, Texas 2024" 
-                class="w-full max-w-2xl h-auto rounded-lg"
+                class="w-full max-w-content-narrow h-auto rounded-lg"
                 width="1200"
                 height="800"
                 loading="eager"
@@ -65,12 +52,13 @@ export default function About() {
 
             {/* Story */}
             <section 
-              class="max-w-2xl mx-auto text-center mb-12"
+              class="max-w-content-narrow mx-auto text-left mb-8 sm:mb-12"
               style={{ color: "var(--text-primary)" }}
+              aria-labelledby="origin-story-heading"
             >
-              <h2 class="sr-only">Origin Story</h2>
+              <h2 id="origin-story-heading" class="sr-only">Origin Story</h2>
               <p 
-                class="text-xl md:text-2xl leading-relaxed font-mono mb-8"
+                class="text-lg sm:text-xl md:text-2xl leading-relaxed font-mono mb-8"
                 style={{ color: "var(--text-primary)" }}
               >
                 It began with boz asking his friend jeff to produce a new record with him. boz and jeff put out the first mozworth record with the help of a team of new friends. jeff was inspired by the process of the mozworth record and asked boz to put his record out. boz and jeff are putting out jeff's record. thus, the birth of friend music records. welcome!
@@ -79,36 +67,37 @@ export default function About() {
 
             {/* Office Address */}
             <section 
-              class="max-w-2xl mx-auto text-center"
+              class="max-w-content-narrow mx-auto text-center"
               style={{ color: "var(--text-secondary)" }}
               aria-labelledby="office-address-heading"
             >
               <h2 id="office-address-heading" class="sr-only">Office Address</h2>
-              <address 
+              <address
                 class="text-lg font-mono not-italic"
                 style={{ color: "var(--text-secondary)" }}
               >
                 <p class="mb-2">
-                  <strong style={{ color: "var(--text-primary)" }}>friend music records</strong>
+                  <strong style={{ color: "var(--text-primary)" }}>{LABEL.name}</strong>
+                  <span style={{ color: "var(--text-tertiary)" }}> · founded 2026</span>
                 </p>
-                <p class="mb-2">9901 brodie lane suite 160-302</p>
-                <p>austin, tx 78748</p>
+                <p class="mb-2">{LABEL.address.street}</p>
+                <p>
+                  {LABEL.address.city}, {LABEL.address.state} {LABEL.address.postalCode}
+                </p>
                 <p class="mt-4">
-                  <a 
-                    href="mailto:info@friendmusicrecords.com"
+                  <a
+                    href={`mailto:${LABEL.email}`}
                     class="hover:underline"
                     style={{ color: "var(--text-primary)" }}
                   >
-                    info@friendmusicrecords.com
+                    {LABEL.email}
                   </a>
                 </p>
               </address>
             </section>
           </article>
         </main>
-
-        <Footer />
-      </div>
+      </Layout>
     </>
   );
 }

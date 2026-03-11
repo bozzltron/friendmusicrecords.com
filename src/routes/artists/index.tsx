@@ -1,6 +1,5 @@
 import { For } from "solid-js";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import Layout from "../../components/Layout";
 import ArtistCard from "../../components/ArtistCard";
 import { StandardMetadata } from "../../utils/metadata";
 import { getActiveArtists } from "../../data/artists";
@@ -19,30 +18,17 @@ export default function Artists() {
         keywords="friend music records artists, indie artists, record label roster, independent musicians, music label artists, artist roster"
       />
       
-      <div class="flex flex-col min-h-screen">
-        <a 
-          href="#main-content" 
-          class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 px-4 py-2 rounded focus:outline-none focus:ring-2 z-50"
-          style={{ 
-            "background": "var(--accent-primary)",
-            "color": "var(--bg-primary)"
-          }}
+      <Layout>
+        <main
+          id="main-content"
+          class="flex-1 px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
+          style={{ background: "var(--bg-primary)" }}
         >
-          Skip to main content
-        </a>
-
-        <Navigation />
-        
-        <main 
-          id="main-content" 
-          class="flex-1 px-4 py-16"
-          style={{ "background": "var(--bg-primary)" }}
-        >
-          <div class="max-w-6xl mx-auto">
+          <div class="max-w-content mx-auto">
             {/* Heading */}
-            <div class="mb-12 text-center">
+            <div class="mb-8 sm:mb-12 text-center">
               <h1 
-                class="text-5xl font-mono mb-4"
+                class="text-4xl sm:text-5xl font-mono mb-4"
                 style={{ color: "var(--text-primary)" }}
               >
                 Our Artists
@@ -97,9 +83,7 @@ export default function Artists() {
             )}
           </div>
         </main>
-
-        <Footer />
-      </div>
+      </Layout>
     </>
   );
 }
