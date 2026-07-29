@@ -9,5 +9,7 @@ export interface PressRelease {
   content: string;     // Full content
   featured: boolean;
   tags: string[];
+  buyVinylUrl?: string; // External vinyl purchase link
+  igPostUrl?: string;   // Instagram post URL
 }
 

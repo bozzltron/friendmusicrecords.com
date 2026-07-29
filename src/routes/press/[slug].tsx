@@ -84,6 +84,26 @@ export default function PressReleasePage() {
               </ol>
             </nav>
 
+            {/* Buy on Vinyl CTA */}
+            <Show when={pressRelease?.buyVinylUrl}>
+              {(url) =>
+                <div class="text-center mb-8">
+                  <a
+                    href={url()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-colors focus:outline-none focus:ring-2"
+                    style={{
+                      "background": "var(--vinyl-cta-bg)",
+                      "color": "var(--vinyl-cta-text)"
+                    }}
+                  >
+                    Buy on Vinyl
+                  </a>
+                </div>
+              }
+            </Show>
+
             {/* Header */}
             <header class="mb-8 text-center">
               <div class="flex flex-wrap justify-center gap-2 mb-4">
@@ -134,6 +154,12 @@ export default function PressReleasePage() {
                     const text = paragraph.replace(/\*/g, '');
                     return <p class="italic mb-4" style={{ color: "var(--text-secondary)" }}>{text}</p>;
                   }
+                  // Check if it's an image (markdown format)
+                  if (paragraph.includes('![') && paragraph.includes('](') && paragraph.includes(')')) {
+                    const altText = paragraph.match(/!\[(.*?)\]/)?.[1] || '';
+                    const src = paragraph.match(/\((.*?)\)/)?.[1] || '';
+                    return <img src={src} alt={altText} class="my-6 rounded-lg shadow-md max-w-full h-auto" />;
+                  }
                   // Check if it's a list
                   if (paragraph.includes('- ')) {
                     const items = paragraph.split('\n').filter(line => line.startsWith('- '));
@@ -150,6 +176,43 @@ export default function PressReleasePage() {
                 })}
               </div>
             </article>
+
+            {/* Instagram Post Link */}
+            <Show when={pressRelease?.igPostUrl}>
+              {(igUrl) =>
+                <div class="text-center mb-8">
+                  <a
+                    href={igUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-base transition-colors underline hover:no-underline focus:outline-none focus:ring-2 rounded px-3 py-2"
+                    style={{ "color": "var(--text-secondary)" }}
+                  >
+                    View on Instagram
+                  </a>
+                </div>
+              }
+            </Show>
+
+            {/* Call to Action Button */}
+            <Show when={pressRelease?.buyVinylUrl}>
+              {(url) =>
+                <div class="text-center mb-8">
+                  <a
+                    href={url()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-colors focus:outline-none focus:ring-2"
+                    style={{
+                      "background": "var(--vinyl-cta-bg)",
+                      "color": "var(--vinyl-cta-text)"
+                    }}
+                  >
+                    Buy on Vinyl
+                  </a>
+                </div>
+              }
+            </Show>
 
             {/* Artist Link */}
             <Show when={artist()}>

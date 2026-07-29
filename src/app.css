@@ -31,6 +31,10 @@
   /* Accent Colors */
   --accent-primary: #d4d4d4;
   --accent-secondary: #525252;
+  /* Vinyl CTA button */
+  --vinyl-cta-bg: #16a34a;
+  --vinyl-cta-bg-hover: #15803d;
+  --vinyl-cta-text: #ffffff;
   /* Border Colors */
   --border-default: #1c1c1c;
   --border-hover: #252525;
@@ -53,6 +57,10 @@
     --text-tertiary: #737373;
     --accent-primary: #262626;
     --accent-secondary: #a3a3a3;
+    /* Vinyl CTA button */
+    --vinyl-cta-bg: #15803d;
+    --vinyl-cta-bg-hover: #166534;
+    --vinyl-cta-text: #ffffff;
     --border-default: #e5e5e5;
     --border-hover: #d4d4d4;
     --focus-ring: #262626;

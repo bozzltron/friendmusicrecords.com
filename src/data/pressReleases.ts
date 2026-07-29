@@ -2,6 +2,39 @@ import type { PressRelease } from '../types/pressRelease';
 
 export const pressReleases: PressRelease[] = [
   {
+    id: 'mozworth-vinyl-release',
+    slug: 'mozworth-vinyl-release',
+    title: 'mozworth Debuts on Vinyl',
+    subtitle: 'Indie-alt rock outfit releases their debut on vinyl',
+    date: '2026-07-27',
+    artistId: 'mozworth',
+    excerpt: 'The indie-alt rock band mozworth has released their self-titled debut on vinyl.',
+    content: `**FOR IMMEDIATE RELEASE**
+
+**mozworth Debuts on Vinyl with Self-Titled Album**
+
+![mozworth debut vinyl release](/mozworth-debut.webp)
+
+**Austin, TX – July 27, 2026** — Indie-alt rock outfit mozworth is proud to announce the vinyl release of their self-titled debut. This release marks the band's first official vinyl pressing.
+
+A vinyl pressing featuring the complete EP experience plus three exclusive bonus tracks: "Walking The Cow," "The Sky Is Falling," and "Sandpiper." Pressed for audiophiles and collectors alike—this is brings together mozworth's early material into one collection.
+
+Austin indie alt-rock, pressed to wax.
+
+The vinyl release includes a gatefold sleeve with liner notes and a special insert featuring song lyrics.
+
+**friend music records**
+info@friendmusicrecords.com
+friendmusicrecords.com
+
+**About mozworth**
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.`,
+    featured: true,
+    tags: ['Release', 'mozworth', 'Vinyl'],
+    buyVinylUrl: 'https://elasticstage.com/mozworth/releases/mozworth-album',
+    igPostUrl: 'https://www.instagram.com/p/DW6w-0LjsgI/'
+  },
+  {
     id: 'story-of-an-artist-release',
     slug: 'mozworth-story-of-an-artist-release',
     title: 'mozworth – Indie‑Alt Rock Outfit Releases a New Cover of Daniel Johnston\'s "Story of an Artist"',
@@ -13,19 +46,19 @@ export const pressReleases: PressRelease[] = [
 
 **mozworth – Indie‑Alt Rock Outfit Releases a New Cover of Daniel Johnston's "Story of an Artist"**
 
-**Austin, TX – January 9, 2026** — South‑Austin band mozworth is proud to announce the digital release of their re‑imagined version of Daniel Johnston's classic *Story of an Artist*. The track drops on January 22, 2026—the day that celebrates both Johnston's birthday and Austin's "Hi, How Are You Day," a city‑wide reminder to check in on friends' mental health. By pairing the tribute with this civic observance, mozworth hopes to honor Daniel's legacy in song and in community.
+**Austin, TX – January 9, 2026** — South‑Austin band mozworth is proud to announce the digital release of their re‑imagined version of Daniel Johnston\'s classic *Story of an Artist*. The track drops on January 22, 2026—the day that celebrates both Johnston\'s birthday and Austin\'s "Hi, How Are You Day," a city‑wide reminder to check in on friends' mental health. By pairing the tribute with this civic observance, mozworth hopes to honor Daniel\'s legacy in song and in community.
 
-The song has long spoke to Michael Bosworth. "It is such a vivid picture of Daniel's experience. It contains some profound perspectives along with some deep pain. Sonically, it's beautiful." he says. "I remember working on the demo and getting caught up with emotion. I was able to connect with his pain."
+The song has long spoke to Michael Bosworth. "It is such a vivid picture of Daniel\'s experience. It contains some profound perspectives along with some deep pain. Sonically, it\'s beautiful." he says. "I remember working on the demo and getting caught up with emotion. I was able to connect with his pain."
 
-Paying homage to Daniel isn't new for mozworth. Last year was the first release of this kind with "Walking The Cow". "Story of an Artist" is the second installment. "We knew we were going to record this song early and I had a demo but we waited till late in the year to get recording", says Michael Bosworth. "We quickly realized that everyone's schedules were too fragmented for a traditional in‑person studio day." Instead, they pieced the song together digitally.
+Paying homage to Daniel isn't new for mozworth. Last year was the first release of this kind with "Walking The Cow". "Story of an Artist" is the second installment. "We knew we were going to record this song early and I had a demo but we waited till late in the year to get recording", says Michael Bosworth. "We quickly realized that everyone\'s schedules were too fragmented for a traditional in-person studio day." Instead, they pieced the song together digitally.
 
-They had a demo, but they needed drums. They needed Mike. When Mike heard the demo, he heard the Beatles—a natural homage, given Daniel Johnston's lifelong admiration for the Fab Four. The band embraced the idea, swapping their usual twin‑electric‑guitar attack for a mandolin and upright bass.
+They had a demo, but they needed drums. They needed Mike. When Mike heard the demo, he heard the Beatles—a natural homage, given Daniel Johnston\'s lifelong admiration for the Fab Four. The band embraced the idea, swapping their usual twin‑electric‑guitar attack for a mandolin and upright bass.
 
 Each member showed up with their instrument, wrote their part, and recorded it on the spot. Mark Heaps on mandolin. Jack Schultz on upright bass. Michael Bosworth on electric guitar. "These guys showed up really having no idea what to play and reacting to the recording. There is a spontaneity to it. A trust in our intuition that brings some magic.", says Michael Bosworth.
 
-Mandolin, bass, guitar, and vocals were recorded at mozworth's South‑Austin space; drums and auxiliary percussion at Mike Hall's home studio. A brief nod to the gear: a set of vintage microphones and preamps borrowed from friend Josh Wolfer to give this release a new sound. Mixing and mastering were handled by Steven Glaze at Tone Freq Studios.
+Mandolin, bass, guitar, and vocals were recorded at mozworth\'s South‑Austin space; drums and auxiliary percussion at Mike Hall\'s home studio. A brief nod to the gear: a set of vintage microphones and preamps borrowed from friend Josh Wolfer to give this release a new sound. Mixing and mastering were handled by Steven Glaze at Tone Freq Studios.
 
-mozworth's *Story of an Artist* is a dreamy DIY reinterpretation that honors the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes.
+mozworth\'s *Story of an Artist* is a dreamy DIY reinterpretation that honors the original by digging deep into Daniel\'s own inspiration and playing in the spirit of his heroes.
 
 January 22 is Hi, How Are You Day in Austin and several other cities, a grassroots campaign encouraging residents to reach out to friends and family about mental‑health wellbeing.
 
@@ -35,15 +68,15 @@ mozworth is currently booking dates in the Austin area to support the release an
 
 For media inquiries, interviews, or press materials, please contact:
 
-Friend Music Records PR
-email: info@friendmusicrecords.com
-phone: +1 (515) 418‑7894
+**friend music records**
+info@friendmusicrecords.com
+friendmusicrecords.com
 
 **About mozworth**
 mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
 
-**About Friend Music Records**
-Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
+**About friend music records**
+friend music records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
     featured: true,
     tags: ['Release', 'mozworth', 'Single', 'Story of an Artist', 'Daniel Johnston']
   },
@@ -61,7 +94,7 @@ Friend Music Records is an independent record label based in Austin, Texas, dedi
 
 *A guitar-driven, ocean-soaked anthem inspired by myth, nature, and the quiet messengers all around us*
 
-**AUSTIN, TX – August 21, 2025** — South Austin four-piece band mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times. It follows this spring's The Sky Is Falling and acts as its emotional companion — where one named the fracture, the other seeks the bridge.
+**Austin, TX – August 21, 2025** — South Austin four-piece band mozworth releases Sandpiper, a sweeping new single shaped by the rhythms of the Gulf Coast, the weight of mythology, and the search for answers in uncertain times. It follows this spring's The Sky Is Falling and acts as its emotional companion — where one named the fracture, the other seeks the bridge.
 
 The song took shape during a family trip to Surfside Beach, Texas — days filled with skimboarding, saltwater, and long walks along the shore. It was there that the sandpiper first caught mozworth's attention. "When you're walking along the coastline, you have the ocean to one side and land to the other. Ahead of you is that narrow strip of wet sand. That's where you find the sandpiper," he says.
 
@@ -81,15 +114,15 @@ With Ken's move, drummer Mike Hall steps in for the Sandpiper single release. In
 
 For media inquiries, interviews, or press materials, please contact:
 
-Friend Music Records
+friend music records
 info@friendmusicrecords.com
 friendmusicrecords.com
 
 **About mozworth**
 mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
 
-**About Friend Music Records**
-Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
+**About friend music records**
+friend music records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
     featured: true,
     tags: ['Release', 'mozworth', 'Single', 'Sandpiper']
   },
@@ -121,15 +154,15 @@ At its heart, "The Sky Is Falling" is more than a commentary on the state of the
 
 For media inquiries, interviews, or press materials, please contact:
 
-Friend Music Records
+friend music records
 info@friendmusicrecords.com
 friendmusicrecords.com
 
 **About mozworth**
 mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
 
-**About Friend Music Records**
-Friend Music Records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
+**About friend music records**
+friend music records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
     featured: true,
     tags: ['Release', 'mozworth', 'Single', 'The Sky Is Falling']
   }
