@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.friendmusic.com/sitemap.xml
+Sitemap: https://friendmusicrecords.com/sitemap.xml
 

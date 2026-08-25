@@ -87,6 +87,7 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       <meta name="summary" content={props.description} />
       
       {/* Enhanced Discovery */}
+      <link rel="alternate" type="application/rss+xml" title="friend music records press" href="https://friendmusicrecords.com/feed.xml" />
       <meta name="application-name" content="friend music records" />
       <meta name="rating" content="general" />
       <meta name="coverage" content="Worldwide" />

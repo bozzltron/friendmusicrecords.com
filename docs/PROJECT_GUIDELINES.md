@@ -5,7 +5,7 @@ Human-readable project conventions for developers and AI assistants.
 ## Primary Goals
 
 - **Brand Consistency**: Maintain consistent lowercase brand name and monospace typography across all pages
-- **SEO Optimization**: Optimize for search engines with proper metadata, structured data, and semantic HTML
+- **SEO Optimization**: Optimize for search engines with proper metadata, structured data, and semantic HTML; maintain robots.txt and sitemap.xml; add RSS feed link to all pages
 - **Performance**: Fast loading times, optimized images, and efficient code
 - **Accessibility**: WCAG compliant with proper ARIA labels, semantic HTML, keyboard navigation, and color-scheme support (dark default, light mode when user prefers)
 - **Color Scheme Support**: Dark mode by default; light mode when the user's system preference is light
