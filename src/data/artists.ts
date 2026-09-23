@@ -7,11 +7,9 @@ export const artists: Artist[] = [
     name: 'mozworth',
     bio: {
       short: 'Austin-based four-piece indie alternative rock band blending \'90s nostalgia with modern vulnerability. Guitar-driven songs about myth, nature, and the human experience.',
-      full: `mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
+      full: `mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band has now fused Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
 
-With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day) and international music publications. Their songwriting blends personal narrative with universal themes, crafted through collaborative sessions that capture the complexity of modern life with honesty, melody, and raw power.
-
-Under friend music records, mozworth released their cover of Daniel Johnston's "Story of an Artist" in January 2026—coinciding with Johnston's birthday and Austin's Hi, How Are You Day. The dreamy DIY reinterpretation honors the original with mandolin, upright bass, and restrained guitar, earning praise from musikepool and beyond.`
+With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day), international music publications, and radio. Their sound is progressing from early introspection and newly unleashed creativity only met by their raw power.`
     },
     genre: ['Indie Rock', 'Alternative Rock'],
     location: {

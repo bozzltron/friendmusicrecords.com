@@ -123,8 +123,8 @@ export default function Home() {
                 <div class="flex-shrink-0">
                   <A href="/artists/mozworth">
                     <img 
-                      src="/storyofanartist.webp" 
-                      alt="mozworth - Story of an Artist cover art" 
+src="/Why-Not.webp" 
+                       alt="mozworth - Why Not single artwork"
                       class="w-64 h-64 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                       width="256"
                       height="256"
@@ -148,12 +148,12 @@ export default function Home() {
                     class="text-4xl font-mono mb-2"
                     style={{ color: "var(--text-primary)" }}
                   >
-                    Story of an Artist
+                    Why Not
                   </h3>
                   
                   <p 
                     class="text-xl mb-8"
-                    style={{ color: "var(--text-secondary)" }}
+                    style={{ color: "var(--text-primary)" }}
                   >
                     by <A 
                       href="/artists/mozworth"
@@ -169,7 +169,7 @@ export default function Home() {
                     class="text-base mb-16 leading-relaxed"
                     style={{ color: "var(--text-secondary)" }}
                   >
-                    A dreamy DIY reinterpretation of Daniel Johnston's classic song "Story of an Artist", honoring the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes. Released January 22, 2026 on Hi, How Are You Day—a celebration of Daniel Johnston's birthday and Austin's city-wide reminder to check in on friends' mental health.
+                    mozworth releases "Why Not," the first single from forthcoming album The Mountain & The Wolf. The track bridges the sonic gap from summer's "The Sky Is Falling" and "Sandpiper" to the evolving sound that will define the LP's 2027 release.
                   </p>
                   
                   <div class="flex flex-wrap gap-3 justify-center md:justify-start mt-4">
@@ -182,17 +182,6 @@ export default function Home() {
                       }}
                     >
                       View EPK
-                    </A>
-                    <A 
-                      href="/press/mozworth-story-of-an-artist-release"
-                      class="px-6 py-3 rounded-md font-medium transition-colors focus:outline-none focus:ring-2"
-                      style={{ 
-                        "background": "transparent",
-                        "color": "var(--text-primary)",
-                        "border": "1px solid var(--border-default)"
-                      }}
-                    >
-                      Read Press Release
                     </A>
                   </div>
                 </div>

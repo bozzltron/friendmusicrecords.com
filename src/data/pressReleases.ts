@@ -2,6 +2,37 @@ import type { PressRelease } from '../types/pressRelease';
 
 export const pressReleases: PressRelease[] = [
   {
+    id: 'mozworth-why-not-release',
+    slug: 'mozworth-why-not-release',
+    title: 'mozworth Releases "Why Not": An Indie Rock Awakening',
+    subtitle: 'South Austin four-piece heralds forthcoming album The Mountain & The Wolf',
+    date: '2026-09-23',
+    artistId: 'mozworth',
+    excerpt: 'mozworth releases "Why Not," the first single from forthcoming album The Mountain & The Wolf',
+    content: `**FOR IMMEDIATE RELEASE**
+
+mozworth Releases "Why Not": An Indie Rock Awakening
+Austin, TX – September 23, 2026
+South Austin four-piece mozworth heralds their forthcoming studio album The Mountain & The Wolf with the release of "Why Not." The track bridges the sonic gap from summer's "The Sky Is Falling" and "Sandpiper" to the evolving sound that will define the LP's 2027 release.This song is only the beginning.
+"Why Not" is a force of its own. It started as a melody that came in dream that would not leave. It took on a voice in a reimagined movie script. It quickly seized the bands opening slot in the set list. It demanded being recorded in full on day one in the studio. "Why Not" comes not only with force but with a message. 
+
+"If you wanted to live a quiet peaceful life, you picked the wrong time to be alive."
+
+The band's sound has evolved with the addition of drummer Mike Hall, who joined after former drummer Ken Mocker departed following the summer releases. This new chemistry has catalyzed each member to push their playing into new territory. The result is explosive, undeniable energy that demanded a bigger space. The old rehearsal rooms were retired and home studios abandoned in favor of 5th Street Studios, where recording engineer Ryan Huseman live-tracked the band for their first album sessions. The final mix and master were handled by Steve Glaze at Tone Freq Studios.
+
+"Why Not" comes at a convergence with the churning waves of our world, a band finding its beat, a song that grabs one by the shoulders with the intent, and a studio big enough for the sound.
+
+Stay tuned for a more music next month leading towards the full length release of The Mountain & The Wolf in 2027.
+---
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band has now fused Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.
+With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day), international music publications, and radio. Their sound is progressing from early introspection and newly unleashed creativity only met by their raw power.  
+friend music records
+9901 brodie lane suite 160-302
+austin, tx 78748  `,
+    featured: true,
+    tags: ['Release', 'mozworth', 'Single', 'Why Not', 'The Mountain & The Wolf']
+  },
+  {
     id: 'mozworth-vinyl-release',
     slug: 'mozworth-vinyl-release',
     title: 'mozworth Debuts on Vinyl',

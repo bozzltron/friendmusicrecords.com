@@ -128,22 +128,22 @@ export default function ArtistEPK() {
                   <h2 id="featured-release-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Featured Release</h2>
                   <article class="flex flex-col md:flex-row gap-6 items-center">
                     <img
-                      src="/storyofanartist.webp"
-                      alt="Story of an Artist cover art"
+                      src="/Why-Not.webp"
+                      alt="Why Not single cover art"
                       class="w-full md:w-80 h-[420px] rounded-lg shadow-lg object-cover"
                       loading="lazy"
                       decoding="async"
                     />
                     <div class="flex-1">
-                      <h3 class="text-3xl font-mono mb-4" style={{ color: "var(--text-primary)" }}>Story of an Artist</h3>
+                      <h3 class="text-3xl font-mono mb-4" style={{ color: "var(--text-primary)" }}>Why Not</h3>
                       <p class="mb-2" style={{ color: "var(--text-tertiary)" }}>
                         <span class="sr-only">Release type:</span>Single 
                         <span aria-hidden="true"> • </span>
                         <span class="sr-only">Released on:</span>
-                        <time datetime="2026-01-22">Released January 22, 2026</time>
+                        <time datetime="2026-09-23">Released September 23, 2026</time>
                       </p>
                       <p class="mb-4 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                        A dreamy DIY reinterpretation of Daniel Johnston's classic, honoring the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes. Released on Hi, How Are You Day—a celebration of Daniel's birthday and Austin's city-wide reminder to check in on friends' mental health.
+                        mozworth releases "Why Not," the first single from forthcoming album The Mountain & The Wolf. The track bridges the sonic gap from summer's "The Sky Is Falling" and "Sandpiper" to the evolving sound that will define the LP's 2027 release.
                       </p>
                       <Show when={artistPressReleases()[0]?.slug}>
                         <A 
@@ -155,7 +155,7 @@ export default function ArtistEPK() {
                             "border": "1px solid var(--border-default)",
                             "focus:ring-color": "var(--focus-ring)"
                           }}
-                          aria-label="View more information about Story of an Artist"
+                          aria-label="View more information about Why Not"
                         >
                           More Info
                         </A>
@@ -379,8 +379,10 @@ export default function ArtistEPK() {
                   <nav aria-label="Downloadable press materials">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                       <a 
-                        href="/storyofanartist.webp" 
-                        download="mozworth-story-of-an-artist-cover-art.webp"
+                        href="https://drive.proton.me/urls/WPQZ5WM0G8#Jh2FLYK8pUzM" 
+                        download="mozworth-why-not-cover-art.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="flex items-center px-4 py-3 rounded-lg transition-colors font-medium focus:outline-none focus:ring-2"
                         style={{ 
                           "background": "transparent",
@@ -388,16 +390,18 @@ export default function ArtistEPK() {
                           "border": "1px solid var(--border-default)",
                           "focus:ring-color": "var(--focus-ring)"
                         }}
-                        aria-label="Download Story of an Artist cover art (high-resolution image)"
+                        aria-label="Download Why Not cover art (high-resolution image)"
                       >
                         <div>
-                          <div class="font-semibold" style={{ color: "var(--text-primary)" }}>Story of an Artist Cover Art</div>
+                          <div class="font-semibold" style={{ color: "var(--text-primary)" }}>Why Not Cover Art</div>
                           <div class="text-xs" style={{ color: "var(--text-tertiary)" }}>High-resolution image</div>
                         </div>
                       </a>
                       <a 
-                        href="/mozworth-press-photo.webp" 
+                        href="https://drive.proton.me/urls/8NVN71DCTG#BNMP4DVpZomv" 
                         download="mozworth-press-photo.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="flex items-center px-4 py-3 rounded-lg transition-colors font-medium focus:outline-none focus:ring-2"
                         style={{ 
                           "background": "transparent",
@@ -412,27 +416,6 @@ export default function ArtistEPK() {
                           <div class="text-xs" style={{ color: "var(--text-tertiary)" }}>Official artist photo</div>
                         </div>
                       </a>
-                      <Show when={artist.epkPdf}>
-                        <a 
-                          href={artist.epkPdf!}
-                          download={`${artist.slug}-epk.pdf`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          class="flex items-center px-4 py-3 rounded-lg transition-colors font-medium focus:outline-none focus:ring-2"
-                          style={{ 
-                            "background": "transparent",
-                            "color": "var(--text-primary)",
-                            "border": "1px solid var(--border-default)",
-                            "focus:ring-color": "var(--focus-ring)"
-                          }}
-                          aria-label={`Download ${artist.name} electronic press kit (PDF)`}
-                        >
-                          <div>
-                            <div class="font-semibold" style={{ color: "var(--text-primary)" }}>EPK PDF</div>
-                            <div class="text-xs" style={{ color: "var(--text-tertiary)" }}>Complete press kit document</div>
-                          </div>
-                        </a>
-                      </Show>
                       <a 
                         href="/contact"
                         class="flex items-center px-4 py-3 rounded-lg transition-colors font-medium focus:outline-none focus:ring-2"
@@ -466,71 +449,22 @@ export default function ArtistEPK() {
                   aria-labelledby="press-release-heading"
                 >
                   <h2 id="press-release-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Press Release</h2>
-                  <article class="max-w-none leading-relaxed" style={{ color: "var(--text-primary)" }}>
-                    <p class="font-bold mb-4">FOR IMMEDIATE RELEASE</p>
-                    <p class="mb-4 text-xl font-semibold">mozworth – Indie‑Alt Rock Outfit Releases a New Cover of Daniel Johnston's "Story of an Artist"</p>
-                    <p class="mb-4"><strong>Austin, TX – January 9, 2026</strong></p>
-                    <p class="mb-4">South‑Austin four-piece band mozworth is proud to announce the digital release of their re‑imagined version of Daniel Johnston's classic <em>Story of an Artist</em>. The track drops on January 22, 2026—the day that celebrates both Johnston's birthday and Austin's "Hi, How Are You Day," a city‑wide reminder to check in on friends' mental health. By pairing the tribute with this civic observance, mozworth hopes to honor Daniel's legacy in song and in community.</p>
-                    <p class="mb-4">The song has long spoke to mozworth founder Michael Bosworth. "It is such a vivid picture of Daniel's experience. It contains some profound perspectives along with some deep pain. Sonically, it's beautiful." he says. "I remember working on the demo and getting caught up with emotion. I was able to connect with his pain."</p>
-                    <p class="mb-4">Paying homage to Daniel isn't new for mozworth. Last year was the first release of this kind with "Walking The Cow". "Story of an Artist" is the second installment. "We knew we were going to record this song early and I had a demo but we waited till late in the year to get recording", says Michael Bosworth. "We quickly realized that everyone's schedules were too fragmented for a traditional in‑person studio day." Instead, they pieced the song together digitally.</p>
-                    <p class="mb-4">They had a demo, but they needed drums. They needed Mike. When Mike heard the demo, he heard the Beatles—a natural homage, given Daniel Johnston's lifelong admiration for the Fab Four. The band embraced the idea, swapping their usual twin‑electric‑guitar attack for a mandolin and upright bass.</p>
-                    <p class="mb-4">Each member showed up with their instrument, wrote their part, and recorded it on the spot. Mark Heaps on mandolin. Jack Schultz on upright bass. Michael Bosworth on electric guitar. "These guys showed up really having no idea what to play and reacting to the recording. There is a spontaneity to it. A trust in our intuition that brings some magic.", says Michael Bosworth.</p>
-                    <p class="mb-4">Mandolin, bass, guitar, and vocals were recorded at mozworth's South‑Austin space; drums and auxiliary percussion at Mike Hall's home studio. A brief nod to the gear: a set of vintage microphones and preamps borrowed from friend Josh Wolfer to give this release a new sound. Mixing and mastering were handled by Steven Glaze at Tone Freq Studios.</p>
-                    <p class="mb-4">mozworth's <em>Story of an Artist</em> is a dreamy DIY reinterpretation that honors the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes.</p>
-                    <p class="mb-4">January 22 is Hi, How Are You Day in Austin and several other cities, a grassroots campaign encouraging residents to reach out to friends and family about mental‑health wellbeing.</p>
-                    <p class="mb-4">mozworth is currently booking dates in the Austin area to support the release and the band is in the process of recording their next full length album expected late 2026.</p>
-                    <p class="mb-6 font-semibold">Story of an Artist releases January 22, 2026</p>
-                    <p class="mb-4">For media inquiries, interviews, or press materials, please contact:</p>
-                    <p class="mb-1">friend music records PR<br />email: <a href="mailto:info@friendmusicrecords.com" style={{ color: "var(--accent-primary)" }} class="underline hover:no-underline">info@friendmusicrecords.com</a><br />phone: +1 (515) 418‑7894</p>
+                  <article class="max-w-none leading-relaxed space-y-4" style={{ color: "var(--text-primary)" }}>
+                    <p class="font-bold">FOR IMMEDIATE RELEASE</p>
+                    <p class="text-xl font-semibold">mozworth Releases "Why Not": An Indie Rock Awakening</p>
+                    <p><strong>Austin, TX – September 23, 2026</strong></p>
+                    <p>mozworth releases "Why Not," the first single from forthcoming album The Mountain & The Wolf with the release of "Why Not." The track bridges the sonic gap from summer's "The Sky Is Falling" and "Sandpiper" to the evolving sound that will define the LP's 2027 release. This song is only the beginning.</p>
+                    <p>"Why Not" is a force of its own. It started as a melody that came in a dream that would not leave. It took on a voice in a reimagined movie script. It quickly seized the band's opening slot in the set list. It demanded being recorded in full on day one in the studio. "Why Not" comes not only with force but with a message.</p>
+                    <p>"If you wanted to live a quiet peaceful life, you picked the wrong time to be alive."</p>
+                    <p>The band's sound has evolved with the addition of drummer Mike Hall, who joined after former drummer Ken Mockler departed following the summer releases. This new chemistry has catalyzed each member to push their playing into new territory. The result is explosive, undeniable energy that demanded a bigger space. The old rehearsal rooms were retired and home studios abandoned in favor of 5th Street Studios, where recording engineer Ryan Huseman live-tracked the band for their first album sessions. The final mix and master were handled by Steve Glaze at Tone Freq Studios.</p>
+                    <p>"Why Not" comes at a convergence with the churning waves of our world, a band finding its beat, a song that grabs one by the shoulders with the intent, and a studio big enough for the sound.</p>
+                    <p>Stay tuned for more music next month leading towards the full length release of The Mountain & The Wolf in 2027.</p>
+                    <hr class="my-4" style={{ "border-color": "var(--border-default)" }} />
+                    <p>mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band has now fused Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present.</p>
+                    <p>With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX (Song of the Day), international music publications, and radio. Their sound is progressing from early introspection and newly unleashed creativity only met by their raw power.</p>
+                    <p class="mt-4">For media inquiries, interviews, or press materials, please contact:</p>
+                    <p>friend music records PR<br />email: <a href="mailto:info@friendmusicrecords.com" style={{ color: "var(--accent-primary)" }} class="underline hover:no-underline">info@friendmusicrecords.com</a><br />phone: +1 (515) 418‑7894</p>
                   </article>
-                </section>
-              </Show>
-
-              {/* Press Coverage */}
-              <Show when={artist.id === 'mozworth'}>
-                <section 
-                  class="mb-12 p-6 rounded-lg border" 
-                  style={{ 
-                    "background": "var(--bg-secondary)", 
-                    "border-color": "var(--border-default)" 
-                  }}
-                  aria-labelledby="press-coverage-heading"
-                >
-                  <h2 id="press-coverage-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Press Coverage</h2>
-                  <div class="space-y-6">
-                    <div class="border-b pb-6 last:border-b-0 last:pb-0" style={{ "border-color": "var(--border-default)" }}>
-                      <h3 class="text-xl font-mono mb-3" style={{ color: "var(--text-primary)" }}>musikepool</h3>
-                      <p class="text-sm mb-3" style={{ color: "var(--text-tertiary)" }}>January 2026</p>
-                      <p class="mb-3 leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-                        musikepool calls mozworth's <em>Story of an Artist</em> "a heartfelt tribute that feels both tender and alive—Daniel Johnston's spirit resonates through every note." The review highlights the mix of mandolin, upright bass, and restrained guitar creating "a sound that is warm, organic, and slightly dreamy," and praises Michael Bosworth's emotive vocals. "Story of an Artist is more than a cover—it's a respectful conversation with a musical icon."
-                      </p>
-                      <a 
-                        href="https://musikepool.com/story-of-an-artist-mozworth/" 
-                        target="_blank" 
-                        rel="noopener" 
-                        class="underline font-medium hover:no-underline"
-                        style={{ color: "var(--accent-primary)" }}
-                      >
-                        Read Full Review →
-                      </a>
-                    </div>
-                  </div>
-                  <div class="mt-6">
-                    <a 
-                      href="https://mozworth.music/press" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="inline-block px-6 py-3 rounded-full font-medium transition-colors focus:outline-none focus:ring-2"
-                      style={{ 
-                        "background": "transparent",
-                        "color": "var(--text-primary)",
-                        "border": "1px solid var(--border-default)",
-                        "focus:ring-color": "var(--focus-ring)"
-                      }}
-                    >
-                      View All Press Coverage
-                    </a>
-                  </div>
                 </section>
               </Show>
 
@@ -544,18 +478,20 @@ export default function ArtistEPK() {
                   }}
                   aria-labelledby="credits-heading"
                 >
-                  <h2 id="credits-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Credits - Story of an Artist</h2>
-                  <div class="space-y-4" style={{ color: "var(--text-secondary)" }}>
-                    <p class="mb-2">Written by Daniel Johnston</p>
-                    <p class="mb-2">Arrangement by Michael Bosworth</p>
-                    <p class="mb-2">Produced by Michael Bosworth</p>
-                    <p class="mb-2">Electric Guitar and Vocals performed by Michael Bosworth</p>
-                    <p class="mb-2">Mandolin performed by Mark Heaps</p>
-                    <p class="mb-2">Upright Bass performed by Jack Schultz</p>
-                    <p class="mb-2">Drums and Auxiliary Percussion performed by Mike Hall</p>
-                    <p class="mb-2">Recorded by Michael Bosworth (mandolin, bass, guitar, vocals at mozworth's South-Austin space) and Mike Hall (drums and auxiliary percussion at Mike Hall's home studio)</p>
-                    <p class="mb-2">Mixed and Mastered by Steven Glaze at <a href="https://stevenglaze.com/" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>Tone Freq Studios</a></p>
-                    <p class="mb-2">Vintage microphones and preamps borrowed from Josh Wolfer</p>
+                  <h2 id="credits-heading" class="text-2xl font-mono mb-6" style={{ color: "var(--accent-primary)" }}>Credits - Why Not</h2>
+                  <div class="space-y-2" style={{ color: "var(--text-secondary)" }}>
+                    <p class="mb-2">Songwriting by Michael Bosworth</p>
+                    <p class="mb-2">Lyrics by Michael Bosworth</p>
+                    <p class="mb-2">Composed by Michael Bosworth, Mark Heaps, Jack Schultz, and Mike Hall</p>
+                    <p class="mb-2">Produced by mozworth</p>
+                    <p class="mb-2">Guitar and Vocals performed by Michael Bosworth</p>
+                    <p class="mb-2">Guitar performed by Mark Heaps</p>
+                    <p class="mb-2">Bass performed by Jack Schultz</p>
+                    <p class="mb-2">Drums performed by Mike Hall</p>
+                    <p class="mb-2">Recorded by Ryan Huseman at 5th Street Studios</p>
+                    <p class="mb-2">Mixed by Steven Glaze at <a href="https://stevenglaze.com/" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>Tone Freq Studios</a></p>
+                    <p class="mb-2">Mastered by Steven Glaze at <a href="https://stevenglaze.com/" target="_blank" rel="noopener" class="underline hover:no-underline" style={{ color: "var(--accent-primary)" }}>Tone Freq Studios</a></p>
+                    <p class="mb-2">Cover art by Mark Heaps</p>
                   </div>
                 </section>
               </Show>
