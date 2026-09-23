@@ -13,6 +13,15 @@ export default function Footer() {
     >
       <div class="max-w-content mx-auto">
         <p>&copy; {currentYear} friend music records. Founded 2026. All rights reserved.</p>
+        <p class="mt-2">
+          <a 
+            href="/blog" 
+            class="text-accent-primary hover:text-accent-secondary transition-colors"
+            style={{ "color": "var(--accent-primary)", "hover:color": "var(--accent-secondary)" }}
+          >
+            Blog
+          </a>
+        </p>
       </div>
     </footer>
   );
