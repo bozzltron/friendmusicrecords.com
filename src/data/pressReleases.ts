@@ -77,19 +77,19 @@ mozworth is a four-piece indie alternative rock band based in Austin, Texas. Ori
 
 **mozworth – Indie‑Alt Rock Outfit Releases a New Cover of Daniel Johnston's "Story of an Artist"**
 
-**Austin, TX – January 9, 2026** — South‑Austin band mozworth is proud to announce the digital release of their re‑imagined version of Daniel Johnston\'s classic *Story of an Artist*. The track drops on January 22, 2026—the day that celebrates both Johnston\'s birthday and Austin\'s "Hi, How Are You Day," a city‑wide reminder to check in on friends' mental health. By pairing the tribute with this civic observance, mozworth hopes to honor Daniel\'s legacy in song and in community.
+**Austin, TX – January 9, 2026** — South‑Austin band mozworth is proud to announce the digital release of their re‑imagined version of Daniel Johnston's classic *Story of an Artist*. The track drops on January 22, 2026—the day that celebrates both Johnston's birthday and Austin's "Hi, How Are You Day," a city‑wide reminder to check in on friends' mental health. By pairing the tribute with this civic observance, mozworth hopes to honor Daniel's legacy in song and in community.
 
-The song has long spoke to Michael Bosworth. "It is such a vivid picture of Daniel\'s experience. It contains some profound perspectives along with some deep pain. Sonically, it\'s beautiful." he says. "I remember working on the demo and getting caught up with emotion. I was able to connect with his pain."
+The song has long spoke to Michael Bosworth. "It is such a vivid picture of Daniel's experience. It contains some profound perspectives along with some deep pain. Sonically, it's beautiful." he says. "I remember working on the demo and getting caught up with emotion. I was able to connect with his pain."
 
-Paying homage to Daniel isn't new for mozworth. Last year was the first release of this kind with "Walking The Cow". "Story of an Artist" is the second installment. "We knew we were going to record this song early and I had a demo but we waited till late in the year to get recording", says Michael Bosworth. "We quickly realized that everyone\'s schedules were too fragmented for a traditional in-person studio day." Instead, they pieced the song together digitally.
+Paying homage to Daniel isn't new for mozworth. Last year was the first release of this kind with "Walking The Cow". "Story of an Artist" is the second installment. "We knew we were going to record this song early and I had a demo but we waited till late in the year to get recording", says Michael Bosworth. "We quickly realized that everyone's schedules were too fragmented for a traditional in-person studio day." Instead, they pieced the song together digitally.
 
-They had a demo, but they needed drums. They needed Mike. When Mike heard the demo, he heard the Beatles—a natural homage, given Daniel Johnston\'s lifelong admiration for the Fab Four. The band embraced the idea, swapping their usual twin‑electric‑guitar attack for a mandolin and upright bass.
+They had a demo, but they needed drums. They needed Mike. When Mike heard the demo, he heard the Beatles—a natural homage, given Daniel Johnston's lifelong admiration for the Fab Four. The band embraced the idea, swapping their usual twin‑electric‑guitar attack for a mandolin and upright bass.
 
 Each member showed up with their instrument, wrote their part, and recorded it on the spot. Mark Heaps on mandolin. Jack Schultz on upright bass. Michael Bosworth on electric guitar. "These guys showed up really having no idea what to play and reacting to the recording. There is a spontaneity to it. A trust in our intuition that brings some magic.", says Michael Bosworth.
 
-Mandolin, bass, guitar, and vocals were recorded at mozworth\'s South‑Austin space; drums and auxiliary percussion at Mike Hall\'s home studio. A brief nod to the gear: a set of vintage microphones and preamps borrowed from friend Josh Wolfer to give this release a new sound. Mixing and mastering were handled by Steven Glaze at Tone Freq Studios.
+Mandolin, bass, guitar, and vocals were recorded at mozworth's South‑Austin space; drums and auxiliary percussion at Mike Hall's home studio. A brief nod to the gear: a set of vintage microphones and preamps borrowed from friend Josh Wolfer to give this release a new sound. Mixing and mastering were handled by Steven Glaze at Tone Freq Studios.
 
-mozworth\'s *Story of an Artist* is a dreamy DIY reinterpretation that honors the original by digging deep into Daniel\'s own inspiration and playing in the spirit of his heroes.
+mozworth's *Story of an Artist* is a dreamy DIY reinterpretation that honors the original by digging deep into Daniel's own inspiration and playing in the spirit of his heroes.
 
 January 22 is Hi, How Are You Day in Austin and several other cities, a grassroots campaign encouraging residents to reach out to friends and family about mental‑health wellbeing.
 

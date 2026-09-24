@@ -1,7 +1,7 @@
 {
   "name": "friendmusicrecords.com",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Independent record label website - dark minimalist design showcasing artists, releases, and label ethos",
   "scripts": {
     "dev": "vinxi dev",
