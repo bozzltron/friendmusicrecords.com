@@ -31,10 +31,9 @@ export default function Footer() {
           </a>
         </nav>
         <p class="mt-2">
-          <a 
-            href="/blog" 
-            class="text-accent-primary hover:text-accent-secondary transition-colors"
-            style={{ "color": "var(--accent-primary)", "hover:color": "var(--accent-secondary)" }}
+          <a
+            href="/press"
+            class="inline-block transition-colors text-[color:var(--accent-primary)] hover:text-[color:var(--accent-secondary)]"
           >
             Blog
           </a>
