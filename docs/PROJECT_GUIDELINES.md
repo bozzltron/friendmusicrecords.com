@@ -34,3 +34,15 @@ Human-readable project conventions for developers and AI assistants.
 3. Run build — press page and RSS feed update automatically
 
 No separate RSS generation step. Same data drives both.
+
+## Social Links
+
+Label social accounts live in `LABEL.social` in `src/data/label.ts` (single source of truth).
+
+- **Footer**: Rendered as icon links from `LABEL.social` in `src/components/Footer.tsx`
+- **Structured Data**: Included automatically in the RecordLabel JSON-LD `sameAs` field via `createOrganizationData()` in `src/utils/metadata.tsx`
+
+To add a new account:
+1. Add the URL to `LABEL.social` in `src/data/label.ts`
+2. Create an icon component in `src/components/` that uses `fill="currentColor"` (so it respects the theme)
+3. Render it in the footer's social `<nav>` with an `aria-label`

@@ -13,4 +13,7 @@ export const LABEL = {
     state: "tx",
     postalCode: "78748",
   },
+  social: {
+    bluesky: "https://bsky.app/profile/friendmusicrecords.com",
+  },
 } as const;

@@ -152,7 +152,7 @@ export function createOrganizationData() {
     "slogan": "Feel free to make a record with your friends",
     "email": LABEL.email,
     "knowsAbout": ["Independent Music", "Collaborative Music", "Music Production", "Alternative Rock", "Indie Rock", "Music Distribution", "Record Label", "Artist Development"],
-    "sameAs": [],
+    "sameAs": Object.values(LABEL.social),
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
       "value": "1-10"
