@@ -1,4 +1,5 @@
 import { A } from "@solidjs/router";
+import { HttpStatusCode } from "@solidjs/start";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import { StandardMetadata } from "../utils/metadata";
@@ -6,11 +7,13 @@ import { StandardMetadata } from "../utils/metadata";
 export default function NotFound() {
   return (
     <>
+      <HttpStatusCode code={404} />
       <StandardMetadata
         title="page not found | friend music records"
         description="The page you're looking for doesn't exist."
         url="https://friendmusicrecords.com/404"
         type="website"
+        noindex
       />
       
       <div class="flex flex-col min-h-screen">

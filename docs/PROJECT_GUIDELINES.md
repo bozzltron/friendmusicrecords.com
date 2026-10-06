@@ -46,3 +46,12 @@ To add a new account:
 1. Add the URL to `LABEL.social` in `src/data/label.ts`
 2. Create an icon component in `src/components/` that uses `fill="currentColor"` (so it respects the theme)
 3. Render it in the footer's social `<nav>` with an `aria-label`
+
+## Page Metadata
+
+All pages use `StandardMetadata` from `src/utils/metadata.tsx` for title, description, Open Graph, Twitter Card, robots directives, and JSON-LD.
+
+- **Error / utility pages** (e.g. the 404 route) must:
+  1. Pass `noindex` to `StandardMetadata` (emits `robots: noindex, nofollow` and omits the canonical link)
+  2. Render `<HttpStatusCode code={404} />` from `@solidjs/start` so the response returns a real 404 status instead of a soft 200
+- Never add noindex pages to `sitemap.xml`.

@@ -19,6 +19,9 @@ interface MetadataProps {
   // Additional structured data
   structuredData?: Record<string, unknown>;
   breadcrumbData?: Record<string, unknown>;
+
+  // SEO: set true for error/utility pages that should not be indexed
+  noindex?: boolean;
 }
 
 /**
@@ -31,6 +34,9 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
   const image = props.image;
   const imageAlt = props.imageAlt || 'friend music records';
   const type = props.type || 'website';
+  const robots = props.noindex
+    ? 'noindex, nofollow'
+    : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
   
   return (
     <>
@@ -41,7 +47,7 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       {props.author && <meta name="author" content={props.author} />}
       {props.publishedDate && <meta name="article:published_time" content={props.publishedDate} />}
       {props.modifiedDate && <meta name="article:modified_time" content={props.modifiedDate} />}
-      <link rel="canonical" href={props.url} />
+      {!props.noindex && <link rel="canonical" href={props.url} />}
       
       {/* Open Graph - Essential for social sharing */}
       <meta property="og:site_name" content="friend music records" />
@@ -78,9 +84,9 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       <meta name="twitter:domain" content="friendmusicrecords.com" />
       
       {/* LLM & AI Metadata - Help AI understand content */}
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="robots" content={robots} />
+      <meta name="googlebot" content={robots} />
+      <meta name="bingbot" content={robots} />
       {/* AI/LLM specific metadata for better content understanding */}
       <meta name="abstract" content={props.description} />
       <meta name="topic" content="Independent Music, Record Label, Music Distribution" />
