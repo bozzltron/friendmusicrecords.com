@@ -71,8 +71,6 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
       
       {/* Twitter Card - Enhanced for music content */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@friendmusic" />
-      <meta name="twitter:creator" content="@friendmusic" />
       <meta name="twitter:title" content={props.title} />
       <meta name="twitter:description" content={props.description} />
       {image && (
