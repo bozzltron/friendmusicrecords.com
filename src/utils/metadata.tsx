@@ -1,6 +1,20 @@
 import type { JSX } from "solid-js";
 import { LABEL } from "../data/label";
 
+const SITE_URL = "https://friendmusicrecords.com";
+
+/**
+ * Normalize site-relative paths to absolute URLs for social cards and JSON-LD.
+ */
+function toAbsoluteUrl(path?: string): string | undefined {
+  if (!path) return undefined;
+  try {
+    return new URL(path, SITE_URL).toString();
+  } catch {
+    return path;
+  }
+}
+
 interface MetadataProps {
   // Required
   title: string;
@@ -31,7 +45,7 @@ interface MetadataProps {
  * Zero dependencies, fully type-safe
  */
 export function StandardMetadata(props: MetadataProps): JSX.Element {
-  const image = props.image;
+  const image = toAbsoluteUrl(props.image);
   const imageAlt = props.imageAlt || 'friend music records';
   const type = props.type || 'website';
   const robots = props.noindex
@@ -58,8 +72,6 @@ export function StandardMetadata(props: MetadataProps): JSX.Element {
         <>
           <meta property="og:image" content={image} />
           <meta property="og:image:secure_url" content={image} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
           <meta property="og:image:alt" content={imageAlt} />
           <meta property="og:image:type" content="image/webp" />
         </>
@@ -196,7 +208,7 @@ export function createArtistData(props: {
     "@type": "MusicGroup",
     "name": props.name,
     "url": props.url,
-    "image": props.image,
+    "image": toAbsoluteUrl(props.image) ?? props.image,
     "description": props.description,
     "genre": props.genre,
     "recordLabel": {
@@ -251,7 +263,7 @@ export function createPressReleaseData(props: {
       "name": LABEL.name,
       "url": LABEL.url
     },
-    ...(props.image && { "image": props.image }),
+    ...(props.image && { "image": toAbsoluteUrl(props.image) ?? props.image }),
     "url": props.url,
     "mainEntityOfPage": {
       "@type": "WebPage",

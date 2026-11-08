@@ -116,6 +116,7 @@ src/
 - **Single source**: `src/data/pressReleases.ts` — add one object per press release
 - **No extra tooling**: Same data drives `/press`, `/press/[slug]`, and `/feed.xml`
 - **To add a release**: Edit `pressReleases.ts`, add a new object with required fields, run `npm run build`
+- **Release-day SOP**: See `docs/PRESS_RELEASE_RUNBOOK.md` for artwork, EPK rotation, RSS, PWA, SEO, metadata, and accessibility checks
 
 ## LLM Optimization Best Practices
 

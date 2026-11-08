@@ -259,6 +259,7 @@ git push origin main
 |---------|---------|
 | Brand rules | `docs/BRAND.md` |
 | Project conventions | `docs/PROJECT_GUIDELINES.md` |
+| Press release SOP (assets, EPK rotation, final checks) | `docs/PRESS_RELEASE_RUNBOOK.md` |
 | Press releases (single source) | `src/data/pressReleases.ts` |
 | Site metadata utils | `src/utils/metadata.tsx` |
 | Types: Press Release | `src/types/pressRelease.ts` |
@@ -280,6 +281,7 @@ git push origin main
 - **Never** commit lint errors
 - **Never** leave stale plan docs in `docs/plans/`
 - **Press releases** → single source in `src/data/pressReleases.ts` → drives press pages + RSS
+- **Shipping a release** → follow `docs/PRESS_RELEASE_RUNBOOK.md` (assets, EPK rotation, final checks)
 
 ---
 

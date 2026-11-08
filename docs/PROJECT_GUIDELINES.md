@@ -33,7 +33,9 @@ Human-readable project conventions for developers and AI assistants.
 2. Add a new object to the `pressReleases` array with: `id`, `slug`, `title`, `date`, `excerpt`, `content`, `featured`, `tags`
 3. Run build — press page and RSS feed update automatically
 
-No separate RSS generation step. Same data drives both.
+No separate RSS generation step. Same data drives both. The `/press` page is the blog: adding a press release entry *is* adding the blog post.
+
+For the full release-day procedure — artwork, EPK rotation, previous-song cleanup, PWA, and final SEO/accessibility checks — see `docs/PRESS_RELEASE_RUNBOOK.md`.
 
 ## Social Links
 

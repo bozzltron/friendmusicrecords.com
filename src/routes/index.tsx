@@ -24,6 +24,7 @@ export default function Home() {
         >
           {/* Hero Section */}
           <header class="max-w-content mx-auto text-center mb-12 sm:mb-16">
+            <h1 class="sr-only">friend music records — independent record label based in Austin, Texas</h1>
             {/* Logo */}
             <div class="mb-6 flex justify-center">
               <img 
@@ -123,8 +124,8 @@ export default function Home() {
                 <div class="flex-shrink-0">
                   <A href="/artists/mozworth">
                     <img 
-src="/Why-Not.webp" 
-                       alt="mozworth - Why Not single artwork"
+src="/mozworth-push.webp"
+                       alt="mozworth - Push single artwork"
                       class="w-64 h-64 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                       width="256"
                       height="256"
@@ -148,7 +149,7 @@ src="/Why-Not.webp"
                     class="text-4xl font-mono mb-2"
                     style={{ color: "var(--text-primary)" }}
                   >
-                    Why Not
+                    Push
                   </h3>
                   
                   <p 
@@ -169,7 +170,7 @@ src="/Why-Not.webp"
                     class="text-base mb-16 leading-relaxed"
                     style={{ color: "var(--text-secondary)" }}
                   >
-                    mozworth releases "Why Not," the first single from forthcoming album The Mountain & The Wolf. The track bridges the sonic gap from summer's "The Sky Is Falling" and "Sandpiper" to the evolving sound that will define the LP's 2027 release.
+                    mozworth returns with "Push," a Texas-meets-surf rock anthem recorded live at 5th Street Studios — a bold sonic evolution ahead of The Mountain & The Wolf.
                   </p>
                   
                   <div class="flex flex-wrap gap-3 justify-center md:justify-start mt-4">

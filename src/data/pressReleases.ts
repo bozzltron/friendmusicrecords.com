@@ -2,6 +2,50 @@ import type { PressRelease } from '../types/pressRelease';
 
 export const pressReleases: PressRelease[] = [
   {
+    id: 'mozworth-push-release',
+    slug: 'mozworth-push-release',
+    title: 'mozworth Drops New Single "Push" — A Bold Sonic Evolution',
+    subtitle: 'The Austin four-piece returns with a Texas-meets-surf rock anthem ahead of The Mountain & The Wolf',
+    date: '2026-11-06',
+    artistId: 'mozworth',
+    excerpt: 'mozworth returns with "Push," a Texas-meets-surf rock anthem recorded live at 5th Street Studios — a bold sonic evolution ahead of The Mountain & The Wolf.',
+    content: `**FOR IMMEDIATE RELEASE**
+
+![mozworth - Push single cover art](/mozworth-push.webp)
+
+**mozworth Drops New Single "Push" — A Bold Sonic Evolution**
+
+**Austin, TX – November 6, 2026** – Following the release of "Why Not" (October 22, 2026) which Cougar Microbes noted, "teases a new and exciting direction ahead of their upcoming album", mozworth is proud to announce "Push." This isn't just a follow-up—it's a declaration: mozworth has arrived.
+
+While prepping for the new album, the band's rehearsal recordings brought the awareness that their sound had outgrown the home studio. They selected 5th Street Studios and recording engineer Ryan Huseman in Austin, Texas to live track and capture this raw power.
+
+"Push" is, on the surface, a song about surfing. Underneath, it delves into something far deeper.
+
+Hammer-on guitar riffs from Michael "Boz" Bosworth cut through feedback, bringing in an eager Mike Hall on drums that immediately build tension. The track explodes into "Texas-meets-surf" guitar work courtesy of Mark Heaps and then settles into a wide stereo verse complete with shimmering, reverb-drenched guitar bending with the waves. Jack Schultz colors the track with a bass as active as the ocean. The track bounces between two sonic landscapes: dry ripping guitar riffs with a fully engaged rock lineup and seaside verses that create space to think. It crescendos in a wall of sound that demonstrates just how powerful this group is. This band is in full send. "Push" is the journey.
+
+The song was mixed and mastered by Steve Glaze at Tone Freq Studios. Steve has grown with the band, mixing every mozworth track to date. He is now in place to refine their latest work.
+
+Stay tuned for more music leading toward the full-length release of The Mountain & The Wolf in 2027.
+
+**Push drops November 24, 2026**
+
+For media inquiries, interviews, or press materials, please contact:
+
+friend music records
+info@friendmusicrecords.com
+friendmusicrecords.com
+
+**About mozworth**
+mozworth is a four-piece indie alternative rock band based in Austin, Texas. Originally founded by Michael "Boz" Bosworth, the band now includes Mark Heaps on electric guitar, Jack Schultz on bass, and Mike Hall on drums. Drawing from the depths of '90s alternative rock and the vulnerability of modern indie, mozworth creates music that feels both timeless and urgently present. With a self-titled debut album released in November 2024, mozworth has garnered attention from KUTX and international music publications.
+
+**About friend music records**
+friend music records is an independent record label based in Austin, Texas, dedicated to helping friends publish their music.`,
+    featured: true,
+    tags: ['Release', 'mozworth', 'Single', 'Push', 'The Mountain & The Wolf'],
+    coverImage: '/mozworth-push.webp',
+    pressReleasePdf: '/mozworth-push-press-release.pdf'
+  },
+  {
     id: 'mozworth-why-not-release',
     slug: 'mozworth-why-not-release',
     title: 'mozworth Releases "Why Not": An Indie Rock Awakening',

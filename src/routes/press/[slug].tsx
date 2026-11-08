@@ -48,14 +48,14 @@ export default function PressReleasePage() {
         type="article"
         keywords={`${pressRelease.tags.join(', ')}, press release, friend music records, austin music, indie music news, record label press`}
         author="friend music records"
-        image={artist()?.image.hero}
-        imageAlt={pressRelease.title}
+        image={pressRelease.coverImage ?? artist()?.image.hero}
+        imageAlt={pressRelease.coverImage ? `${pressRelease.title} cover art` : pressRelease.title}
         publishedDate={pressRelease.date}
         structuredData={createPressReleaseData({
           headline: pressRelease.title,
           description: pressRelease.excerpt,
           datePublished: pressRelease.date,
-          image: artist()?.image.hero,
+          image: pressRelease.coverImage ?? artist()?.image.hero,
           url: `https://friendmusicrecords.com/press/${pressRelease.slug}/`
         })}
         breadcrumbData={createBreadcrumbData([
@@ -176,6 +176,27 @@ export default function PressReleasePage() {
                 })}
               </div>
             </article>
+
+            {/* Press Release PDF */}
+            <Show when={pressRelease.pressReleasePdf}>
+              {(pdf) => (
+                <div class="text-center mb-8">
+                  <a
+                    href={pdf()}
+                    download
+                    class="inline-block px-8 py-4 rounded-lg font-bold text-lg transition-colors focus:outline-none focus:ring-2"
+                    style={{
+                      "background": "transparent",
+                      "color": "var(--text-primary)",
+                      "border": "1px solid var(--border-default)",
+                      "focus:ring-color": "var(--focus-ring)"
+                    }}
+                  >
+                    Download Press Release (PDF)
+                  </a>
+                </div>
+              )}
+            </Show>
 
             {/* Instagram Post Link */}
             <Show when={pressRelease?.igPostUrl}>
